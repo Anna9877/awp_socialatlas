@@ -4,32 +4,36 @@ library(sf)
 library(tidyverse)
 library(readr)
 
-districts<-st_read("data/GA_2020/tracts_int_eszones.geojson") %>% 
+districts<-st_read("data/GA_2022/tracts_int_eszones.geojson") %>% 
   select(GEOID, NAME, School) %>%
   mutate(GEOID=as.character(GEOID)) %>%
   st_transform(4326) 
 
-acc_tracts <- st_read("data/GA_2020/acc_tracts.geojson")%>%
+acc_tracts <- st_read("data/GA_2022/acc_tracts.geojson")%>%
   st_transform(4326) 
 
 es_zones <- st_read("data/acc_es_zones.geojson") %>%
   st_transform(4326) 
 
-atlasdata_acs <-read_csv("data/GA_2020/cleaned_acc_data.csv") 
+atlasdata_acs <-read_csv("data/GA_2022/cleaned_acc_data.csv") 
 
 atlasdata_comm <- read_csv("data/community_data_tct.csv")
+
+###AWP
+awpdata <- read_csv("data/awp3_data.csv") %>% select(-SchoolID)
+awpmeta <- read_csv("data/awp3_metadata.csv")
 
 atlasdata <-  rbind(atlasdata_comm, atlasdata_acs) %>%
   mutate(est = round(est, digits = 2)) %>%
   mutate(moe = round(moe, digits = 2)) %>%
   mutate(GEOID=as.character(GEOID))
 
-acs_es <- read_csv("data/GA_2020/ESzones_acs_interpolation.csv") %>%
+acs_es <- read_csv("data/GA_2022/ESzones_acs_interpolation.csv") %>%
   select(-SchoolID)
 
 comm_es <- read_csv("data/community_data_es.csv") 
 
-atlasdata2 <- rbind(acs_es, comm_es) %>%
+atlasdata2 <- rbind(acs_es, comm_es, awpdata) %>%
   mutate(moe = 0) %>%
   mutate(est = round(est, digits = 2))
 
@@ -40,7 +44,7 @@ atlasdata2 <- rbind(acs_es, comm_es) %>%
 #PURPOSE: This metadata will be used to show the source of each variable. In addition, the metadata will be used
 #for the dynamic loading of the variables in each of the domains.
 
-metadata1 <-read_csv("data/GA_2020/metadata_all.csv") %>% 
+metadata1 <-read_csv("data/GA_2022/metadata_all.csv") %>% 
   select(var_group:type, -popup_lab) %>%
   rename("variable"=var_group,
          "description"=desc_group) %>%
@@ -48,7 +52,7 @@ metadata1 <-read_csv("data/GA_2020/metadata_all.csv") %>%
 
 metadata2 <- read_csv("data/community_metadata.csv") 
 
-metadata <- bind_rows(metadata2,metadata1) %>%
+metadata <- bind_rows(metadata2,metadata1, awpmeta) %>%
   unique()
 
 ###############################################
@@ -97,3 +101,4 @@ transvariables <- subset(metadata, Transportation == 1)
 select_trans <- unique(transvariables$description)
 select_trans_count<-select_trans[grep("Percent",select_trans,invert=TRUE)]
 select_trans_pct<-select_trans[grep("Percent",select_trans)]
+
