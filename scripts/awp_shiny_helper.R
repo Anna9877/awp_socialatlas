@@ -4,18 +4,18 @@ library(sf)
 library(tidyverse)
 library(readr)
 
-districts<-st_read("data/GA_2022/tracts_int_eszones.geojson") %>% 
+districts<-st_read("data/GA_2020/tracts_int_eszones.geojson") %>% 
   select(GEOID, NAME, School) %>%
   mutate(GEOID=as.character(GEOID)) %>%
   st_transform(4326) 
 
-acc_tracts <- st_read("data/GA_2022/acc_tracts.geojson")%>%
+acc_tracts <- st_read("data/GA_2020/acc_tracts.geojson")%>%
   st_transform(4326) 
 
 es_zones <- st_read("data/acc_es_zones.geojson") %>%
   st_transform(4326) 
 
-atlasdata_acs <-read_csv("data/GA_2022/cleaned_acc_data.csv") 
+atlasdata_acs <-read_csv("data/GA_2020/cleaned_acc_data.csv") 
 
 atlasdata_comm <- read_csv("data/community_data_tct.csv")
 
@@ -28,7 +28,7 @@ atlasdata <-  rbind(atlasdata_comm, atlasdata_acs) %>%
   mutate(moe = round(moe, digits = 2)) %>%
   mutate(GEOID=as.character(GEOID))
 
-acs_es <- read_csv("data/GA_2022/ESzones_acs_interpolation.csv") %>%
+acs_es <- read_csv("data/GA_2020/ESzones_acs_interpolation.csv") %>%
   select(-SchoolID)
 
 comm_es <- read_csv("data/community_data_es.csv") 
@@ -44,7 +44,7 @@ atlasdata2 <- rbind(acs_es, comm_es, awpdata) %>%
 #PURPOSE: This metadata will be used to show the source of each variable. In addition, the metadata will be used
 #for the dynamic loading of the variables in each of the domains.
 
-metadata1 <-read_csv("data/GA_2022/metadata_all.csv") %>% 
+metadata1 <-read_csv("data/GA_2020/metadata_all.csv") %>% 
   select(var_group:type, -popup_lab) %>%
   rename("variable"=var_group,
          "description"=desc_group) %>%
