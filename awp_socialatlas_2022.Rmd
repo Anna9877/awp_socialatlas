@@ -186,6 +186,7 @@ radioButtons("rpal", "Select method of grouping the variable", c("Bins" = "b", "
  
 radioButtons("ngroups","Classify the map data into how many equally sized groups?",c(2,3,4,5,6),selected=4)
 
+radioButtons("Area","Which location level data to display?",c("ECC Zones" = "z", "Census Tracts" = "c"),selected="z")
 ```
 
 Map by the [Community Mapping Lab](http://www.communitymappinglab.org)
@@ -218,17 +219,32 @@ filteredData_variable <- reactive({
     rename("var"=variable)
   
   #filter the dataset based on input variables. The comma is used to specify rows.
-  adataset <- atlasdata %>%
-    left_join(metadata_popup) %>%
-    filter(description == variable() & type==input$pct_count) 
-    
-  #subset the data
-  suppressWarnings(left_join(districts, adataset, by = "GEOID") %>%
-                      mutate(moe_disp=if_else(moe==-99,"NA",as.character(moe)),
-                      popup_text=paste("<b>Census Tract: </b>", substr(GEOID,6,11),"<br>",
+  #adataset <- atlasdata %>%
+    #left_join(metadata_popup) %>%
+    #filter(description == variable() & type==input$pct_count) 
+  
+  
+  
+   adataset2 <- atlasdata2 %>% 
+   left_join(metadata_popup) %>% 
+  filter(description == variable() & type == input$pct_count)
+  suppressWarnings(left_join(es_zones, atlasdata2, by = "School") %>% 
+                     mutate(moe_disp=if_else(moe==-99,"NA",as.character(moe)),
+                      popup_text=paste("<b>Census Tract: </b>", 
+                                       #substr(GEOID,6,11),
+                                       "<br>",
                                        "<b>School Zone(s): </b>", School,"<br>",  
                                        "<b>",description,":</b> ", est,"<br>",
                                        "<b>Estimate margin of error: </b>", moe,"<br>", sep = ""))) 
+    
+  #subset the data
+  #suppressWarnings(left_join(districts, adataset, by = "GEOID") %>%
+                      #mutate(moe_disp=if_else(moe==-99,"NA",as.character(moe)),
+                      #popup_text=paste("<b>Census Tract: </b>", #substr(GEOID,6,11),"<br>",
+                                       #"<b>School Zone(s): </b>", School,"<br>",  
+                                       #"<b>",description,":</b> ", est,"<br>",
+                                       #"<b>Estimate margin of error: </b>", moe,"<br>", #sep =
+                                       #""))) 
   
  })
 
@@ -240,8 +256,8 @@ output$map<-renderLeaflet({
   } else if (input$rpal == "q") {
     pal <- colorQuantile("Reds", filteredData_variable()$est, n = nclassint)
   }
-  #pal <- colorBin("Reds",filteredData_variable()$est, bins = nclassint)
-  #pal <- colorQuantile("Reds", filteredData_variable()$est, n = nclassint)
+  pal <- colorBin("Reds",filteredData_variable()$est, bins = nclassint)
+  pal <- colorQuantile("Reds", filteredData_variable()$est, n = nclassint)
   factpal <- brewer.pal(8,"Dark2")
   factpal2 <- colorRampPalette(factpal)(16)
   es_pal <- colorFactor(factpal2, unique(es_zones$School))
@@ -312,7 +328,6 @@ output$map<-renderLeaflet({
 
 
 leafletOutput("map", height="3000px")
-
 ```
 
 Column {.tabset data-width=300}
