@@ -1,0 +1,11 @@
+variable,description,source,Community_safety,Demographics,Health,Housing,Income_employment,Education,Transportation,type
+healthcover,Percentage without health coverage,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
+healthcover,Total without health coverage,AWP 3.0 Survey,0,0,1,0,0,0,0,count
+welfarebens,Percentage receiving welfare benefits,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
+welfarebens,Total receiving welfare benefits,AWP 3.0 Survey,0,0,1,0,0,0,0,count
+snap_p,Percentage receiving SNAP,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
+snap,Total receiving SNAP,AWP 3.0 Survey,0,0,1,0,0,0,0,count
+loan,Percentage who took out a high interest loan in the last 90 days.,AWP 3.0 Survey,0,0,0,0,1,0,0,pct
+loan,Number who took out a high interest loan in the last 90 days.,AWP 3.0 Survey,0,0,0,0,1,0,0,count
+evictthreat,Percentage that were threatened with eviction in the last 90 days,AWP 3.0 Survey,0,0,0,0,1,0,0,pct
+evictthreat,Number that were threatened with eviction in the last 90 days,AWP 3.0 Survey,0,0,0,0,1,0,0,count
