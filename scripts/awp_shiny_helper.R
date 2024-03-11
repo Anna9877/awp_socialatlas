@@ -20,22 +20,28 @@ atlasdata_acs <-read_csv("data/GA_2020/cleaned_acc_data.csv")
 atlasdata_comm <- read_csv("data/community_data_tct.csv")
 
 ###AWP
-awpdata <- read_csv("data/awp3_data.csv") %>% select(-SchoolID)
+awpdata <- read_csv("data/awp3_data.csv") %>% 
+  select(-SchoolID) %>%
+  mutate(moe=0)
+awpdata_geo<-left_join(es_zones,awpdata)
 awpmeta <- read_csv("data/awp3_metadata.csv")
 
-atlasdata <-  rbind(atlasdata_comm, atlasdata_acs) %>%
-  mutate(est = round(est, digits = 2)) %>%
-  mutate(moe = round(moe, digits = 2)) %>%
-  mutate(GEOID=as.character(GEOID))
+atlasdata <-  districts %>%
+  left_join(rbind(atlasdata_comm, atlasdata_acs) %>%
+    mutate(est = round(est, digits = 2)) %>%
+    mutate(moe = round(moe, digits = 2)) %>%
+    mutate(GEOID=as.character(GEOID)))
 
-acs_es <- read_csv("data/GA_2020/ESzones_acs_interpolation.csv") %>%
-  select(-SchoolID)
+atlasdata2<- bind_rows(atlasdata,awpdata_geo)
 
-comm_es <- read_csv("data/community_data_es.csv") 
+# acs_es <- read_csv("data/GA_2020/ESzones_acs_interpolation.csv") %>%
+#   select(-SchoolID)
+# 
+# comm_es <- read_csv("data/community_data_es.csv") 
 
-atlasdata2 <- rbind(acs_es, comm_es, awpdata) %>%
-  mutate(moe = 0) %>%
-  mutate(est = round(est, digits = 2))
+# atlasdata2 <- rbind(acs_es, comm_es, awpdata) %>%
+#   mutate(moe = 0) %>%
+#   mutate(est = round(est, digits = 2))
 
 
 ########################################

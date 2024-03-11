@@ -219,32 +219,33 @@ filteredData_variable <- reactive({
     rename("var"=variable)
   
   #filter the dataset based on input variables. The comma is used to specify rows.
-  #adataset <- atlasdata %>%
-    #left_join(metadata_popup) %>%
-    #filter(description == variable() & type==input$pct_count) 
+  adataset <- atlasdata2 %>%
+    left_join(metadata_popup) %>%
+    filter(description == variable() & type==input$pct_count)
   
   
   
-   adataset2 <- atlasdata2 %>% 
-   left_join(metadata_popup) %>% 
-  filter(description == variable() & type == input$pct_count)
-  suppressWarnings(left_join(es_zones, atlasdata2, by = "School") %>% 
-                     mutate(moe_disp=if_else(moe==-99,"NA",as.character(moe)),
-                      popup_text=paste("<b>Census Tract: </b>", 
-                                       #substr(GEOID,6,11),
-                                       "<br>",
-                                       "<b>School Zone(s): </b>", School,"<br>",  
-                                       "<b>",description,":</b> ", est,"<br>",
-                                       "<b>Estimate margin of error: </b>", moe,"<br>", sep = ""))) 
+  #  adataset2 <- atlasdata2 %>% 
+  #  left_join(metadata_popup) %>% 
+  # filter(description == variable() & type == input$pct_count)
+  # suppressWarnings(left_join(es_zones, atlasdata2, by = "School") %>% 
+  #                    mutate(moe_disp=if_else(moe==-99,"NA",as.character(moe)),
+  #                     popup_text=paste("<b>Census Tract: </b>", 
+  #                                      #substr(GEOID,6,11),
+  #                                      "<br>",
+  #                                      "<b>School Zone(s): </b>", School,"<br>",  
+  #                                      "<b>",description,":</b> ", est,"<br>",
+  #                                      "<b>Estimate margin of error: </b>", moe,"<br>", sep = ""))) 
     
   #subset the data
-  #suppressWarnings(left_join(districts, adataset, by = "GEOID") %>%
-                      #mutate(moe_disp=if_else(moe==-99,"NA",as.character(moe)),
-                      #popup_text=paste("<b>Census Tract: </b>", #substr(GEOID,6,11),"<br>",
-                                       #"<b>School Zone(s): </b>", School,"<br>",  
-                                       #"<b>",description,":</b> ", est,"<br>",
-                                       #"<b>Estimate margin of error: </b>", moe,"<br>", #sep =
-                                       #""))) 
+  suppressWarnings(#left_join(districts, adataset, by = "GEOID") %>%
+    adataset %>%
+      mutate(moe_disp=if_else(moe==-99,"NA",as.character(moe)),
+      popup_text=paste("<b>Census Tract: </b>", #substr(GEOID,6,11),"<br>",
+      "<b>School Zone(s): </b>", School,"<br>",
+      "<b>",description,":</b> ", est,"<br>",
+      "<b>Estimate margin of error: </b>", moe,"<br>", #sep =
+      "")))
   
  })
 
