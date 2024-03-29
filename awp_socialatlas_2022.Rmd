@@ -170,14 +170,15 @@ radioButtons("group","Choose your variable domain:",
      input$variable2c
    } else if (input$group=="Demog" & input$pct_count=="pct") {
      input$variable2p
-   } else if (input$group=="Health" & input$pct_count=="count") {
+   } else if (input$group=="Health" & input$pct_count=="count" 
+              & input$source !="awp") {
      input$variable3c
-   } else if (input$group=="Health" & input$pct_count=="pct") {
+   } else if (input$group=="Health" & input$pct_count=="pct" 
+              & input$source !="awp") {
      input$variable3p
      ####
-   } else if (input$group=="Health" & input$pct_count=="pct" & input$source =="awp") {
+   } else if (input$group=="Health" & input$source =="awp") {
      input$variable65p
-   #   ####
    } else if (input$group=="Housing" & input$pct_count=="count") {
      input$variable4c
    } else if (input$group=="Housing" & input$pct_count=="pct") {
