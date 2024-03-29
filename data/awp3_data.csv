@@ -67,23 +67,6 @@ SchoolID,School,var,est,type,description
 15,Whitehead Rd.,welfarebenefits,66,count,Total receiving welfare benefits
 16,Winterville,welfarebenefits,51,count,Total receiving welfare benefits
 0,Unclassified,welfarebenefits,174,count,Total receiving welfare benefits
-1,Alps Road,welfarebenefits,54.14012739,pct,Percentage receiving welfare benefits
-2,Barnett Shoals,welfarebenefits,21.83908046,pct,Percentage receiving welfare benefits
-3,Barrow,welfarebenefits,20.95238095,pct,Percentage receiving welfare benefits
-4,Choice Zone-West,welfarebenefits,37.91208791,pct,Percentage receiving welfare benefits
-5,Chase Street,welfarebenefits,21.77033493,pct,Percentage receiving welfare benefits
-6,Cleveland Road,welfarebenefits,32.22222222,pct,Percentage receiving welfare benefits
-7,Fowler Drive,welfarebenefits,46.15384615,pct,Percentage receiving welfare benefits
-8,Gaines,welfarebenefits,51.12359551,pct,Percentage receiving welfare benefits
-9,Howard B Stroud,welfarebenefits,53.33333333,pct,Percentage receiving welfare benefits
-10,Judia Jackson Harris,welfarebenefits,32.09876543,pct,Percentage receiving welfare benefits
-11,Choice Zone-East,welfarebenefits,45.27363184,pct,Percentage receiving welfare benefits
-12,Oglethorpe,welfarebenefits,28,pct,Percentage receiving welfare benefits
-13,Timothy Rd.,welfarebenefits,22.57142857,pct,Percentage receiving welfare benefits
-14,Whit Davis,welfarebenefits,25.67567568,pct,Percentage receiving welfare benefits
-15,Whitehead Rd.,welfarebenefits,25.19083969,pct,Percentage receiving welfare benefits
-16,Winterville,welfarebenefits,35.41666667,pct,Percentage receiving welfare benefits
-0,Unclassified,welfarebenefits,45.07772021,pct,Percentage receiving welfare benefits
 1,Alps Road,snap,56,count,Total receiving SNAP
 2,Barnett Shoals,snap,21,count,Total receiving SNAP
 3,Barrow,snap,41,count,Total receiving SNAP
@@ -101,23 +84,6 @@ SchoolID,School,var,est,type,description
 15,Whitehead Rd.,snap,26,count,Total receiving SNAP
 16,Winterville,snap,30,count,Total receiving SNAP
 0,Unclassified,snap,99,count,Total receiving SNAP
-1,Alps Road,snap_p,35.66878981,pct,Percentage receiving SNAP
-2,Barnett Shoals,snap_p,8.045977011,pct,Percentage receiving SNAP
-3,Barrow,snap_p,9.761904762,pct,Percentage receiving SNAP
-4,Choice Zone-West,snap_p,26.92307692,pct,Percentage receiving SNAP
-5,Chase Street,snap_p,7.177033493,pct,Percentage receiving SNAP
-6,Cleveland Road,snap_p,13.88888889,pct,Percentage receiving SNAP
-7,Fowler Drive,snap_p,26.15384615,pct,Percentage receiving SNAP
-8,Gaines,snap_p,39.3258427,pct,Percentage receiving SNAP
-9,Howard B Stroud,snap_p,35.15151515,pct,Percentage receiving SNAP
-10,Judia Jackson Harris,snap_p,14.81481481,pct,Percentage receiving SNAP
-11,Choice Zone-East,snap_p,25.87064677,pct,Percentage receiving SNAP
-12,Oglethorpe,snap_p,12.88888889,pct,Percentage receiving SNAP
-13,Timothy Rd.,snap_p,7.714285714,pct,Percentage receiving SNAP
-14,Whit Davis,snap_p,12.61261261,pct,Percentage receiving SNAP
-15,Whitehead Rd.,snap_p,9.923664122,pct,Percentage receiving SNAP
-16,Winterville,snap_p,20.83333333,pct,Percentage receiving SNAP
-0,Unclassified,snap_p,25.64766839,pct,Percentage receiving SNAP
 1,Alps Road,nointernet,0,count,Number without Internet Access at home
 2,Barnett Shoals,nointernet,1,count,Number without Internet Access at home
 3,Barrow,nointernet,4,count,Number without Internet Access at home
@@ -135,23 +101,6 @@ SchoolID,School,var,est,type,description
 15,Whitehead Rd.,nointernet,1,count,Number without Internet Access at home
 16,Winterville,nointernet,1,count,Number without Internet Access at home
 0,Unclassified,nointernet,22,count,Number without Internet Access at home
-1,Alps Road,nointernet,0,pct,Percent without Internet Access at home
-2,Barnett Shoals,nointernet,0.383141762,pct,Percent without Internet Access at home
-3,Barrow,nointernet,0.952380952,pct,Percent without Internet Access at home
-4,Choice Zone-West,nointernet,1.648351648,pct,Percent without Internet Access at home
-5,Chase Street,nointernet,0.4784689,pct,Percent without Internet Access at home
-6,Cleveland Road,nointernet,0.555555556,pct,Percent without Internet Access at home
-7,Fowler Drive,nointernet,2.307692308,pct,Percent without Internet Access at home
-8,Gaines,nointernet,1.123595506,pct,Percent without Internet Access at home
-9,Howard B Stroud,nointernet,3.03030303,pct,Percent without Internet Access at home
-10,Judia Jackson Harris,nointernet,1.234567901,pct,Percent without Internet Access at home
-11,Choice Zone-East,nointernet,0.995024876,pct,Percent without Internet Access at home
-12,Oglethorpe,nointernet,0.444444444,pct,Percent without Internet Access at home
-13,Timothy Rd.,nointernet,0,pct,Percent without Internet Access at home
-14,Whit Davis,nointernet,0.45045045,pct,Percent without Internet Access at home
-15,Whitehead Rd.,nointernet,0.381679389,pct,Percent without Internet Access at home
-16,Winterville,nointernet,0.694444444,pct,Percent without Internet Access at home
-0,Unclassified,nointernet,5.699481865,pct,Percent without Internet Access at home
 1,Alps Road,loan,16,count,Number who took out a high interest loan in the last 90 days.
 2,Barnett Shoals,loan,14,count,Number who took out a high interest loan in the last 90 days.
 3,Barrow,loan,20,count,Number who took out a high interest loan in the last 90 days.
@@ -169,23 +118,6 @@ SchoolID,School,var,est,type,description
 15,Whitehead Rd.,loan,20,count,Number who took out a high interest loan in the last 90 days.
 16,Winterville,loan,15,count,Number who took out a high interest loan in the last 90 days.
 0,Unclassified,loan,41,count,Number who took out a high interest loan in the last 90 days.
-1,Alps Road,loan,10.1910828,pct,Percent who took out a high interest loan in the last 90 days
-2,Barnett Shoals,loan,5.363984674,pct,Percent who took out a high interest loan in the last 90 days
-3,Barrow,loan,4.761904762,pct,Percent who took out a high interest loan in the last 90 days
-4,Choice Zone-West,loan,6.593406593,pct,Percent who took out a high interest loan in the last 90 days
-5,Chase Street,loan,3.349282297,pct,Percent who took out a high interest loan in the last 90 days
-6,Cleveland Road,loan,8.333333333,pct,Percent who took out a high interest loan in the last 90 days
-7,Fowler Drive,loan,6.923076923,pct,Percent who took out a high interest loan in the last 90 days
-8,Gaines,loan,14.60674157,pct,Percent who took out a high interest loan in the last 90 days
-9,Howard B Stroud,loan,9.696969697,pct,Percent who took out a high interest loan in the last 90 days
-10,Judia Jackson Harris,loan,9.87654321,pct,Percent who took out a high interest loan in the last 90 days
-11,Choice Zone-East,loan,6.467661692,pct,Percent who took out a high interest loan in the last 90 days
-12,Oglethorpe,loan,5.777777778,pct,Percent who took out a high interest loan in the last 90 days
-13,Timothy Rd.,loan,5.428571429,pct,Percent who took out a high interest loan in the last 90 days
-14,Whit Davis,loan,4.954954955,pct,Percent who took out a high interest loan in the last 90 days
-15,Whitehead Rd.,loan,7.633587786,pct,Percent who took out a high interest loan in the last 90 days
-16,Winterville,loan,10.41666667,pct,Percent who took out a high interest loan in the last 90 days
-0,Unclassified,loan,10.62176166,pct,Percent who took out a high interest loan in the last 90 days
 1,Alps Road,evictthreat,25,count,Number that were threatened with eviction in the last 90 days
 2,Barnett Shoals,evictthreat,10,count,Number that were threatened with eviction in the last 90 days
 3,Barrow,evictthreat,15,count,Number that were threatened with eviction in the last 90 days
@@ -203,23 +135,6 @@ SchoolID,School,var,est,type,description
 15,Whitehead Rd.,evictthreat,10,count,Number that were threatened with eviction in the last 90 days
 16,Winterville,evictthreat,8,count,Number that were threatened with eviction in the last 90 days
 0,Unclassified,evictthreat,38,count,Number that were threatened with eviction in the last 90 days
-1,Alps Road,evictthreat,15.92356688,pct,Percentage that were threatened with eviction in the last 90 days
-2,Barnett Shoals,evictthreat,3.831417625,pct,Percentage that were threatened with eviction in the last 90 days
-3,Barrow,evictthreat,3.571428571,pct,Percentage that were threatened with eviction in the last 90 days
-4,Choice Zone-West,evictthreat,7.142857143,pct,Percentage that were threatened with eviction in the last 90 days
-5,Chase Street,evictthreat,3.349282297,pct,Percentage that were threatened with eviction in the last 90 days
-6,Cleveland Road,evictthreat,4.444444444,pct,Percentage that were threatened with eviction in the last 90 days
-7,Fowler Drive,evictthreat,11.53846154,pct,Percentage that were threatened with eviction in the last 90 days
-8,Gaines,evictthreat,14.60674157,pct,Percentage that were threatened with eviction in the last 90 days
-9,Howard B Stroud,evictthreat,11.51515152,pct,Percentage that were threatened with eviction in the last 90 days
-10,Judia Jackson Harris,evictthreat,7.407407407,pct,Percentage that were threatened with eviction in the last 90 days
-11,Choice Zone-East,evictthreat,10.94527363,pct,Percentage that were threatened with eviction in the last 90 days
-12,Oglethorpe,evictthreat,3.555555556,pct,Percentage that were threatened with eviction in the last 90 days
-13,Timothy Rd.,evictthreat,4.285714286,pct,Percentage that were threatened with eviction in the last 90 days
-14,Whit Davis,evictthreat,4.954954955,pct,Percentage that were threatened with eviction in the last 90 days
-15,Whitehead Rd.,evictthreat,3.816793893,pct,Percentage that were threatened with eviction in the last 90 days
-16,Winterville,evictthreat,5.555555556,pct,Percentage that were threatened with eviction in the last 90 days
-0,Unclassified,evictthreat,9.844559585,pct,Percentage that were threatened with eviction in the last 90 days
 1,Alps Road,medicalbills,21,count,Number that had difficulty paying medical bills in the last 90 days
 2,Barnett Shoals,medicalbills,38,count,Number that had difficulty paying medical bills in the last 90 days
 3,Barrow,medicalbills,38,count,Number that had difficulty paying medical bills in the last 90 days
@@ -237,23 +152,6 @@ SchoolID,School,var,est,type,description
 15,Whitehead Rd.,medicalbills,56,count,Number that had difficulty paying medical bills in the last 90 days
 16,Winterville,medicalbills,23,count,Number that had difficulty paying medical bills in the last 90 days
 0,Unclassified,medicalbills,65,count,Number that had difficulty paying medical bills in the last 90 days
-1,Alps Road,medicalbills,13.37579618,pct,Percentage that had difficulty paying medical bills in the last 90 days
-2,Barnett Shoals,medicalbills,14.55938697,pct,Percentage that had difficulty paying medical bills in the last 90 days
-3,Barrow,medicalbills,9.047619048,pct,Percentage that had difficulty paying medical bills in the last 90 days
-4,Choice Zone-West,medicalbills,18.13186813,pct,Percentage that had difficulty paying medical bills in the last 90 days
-5,Chase Street,medicalbills,10.76555024,pct,Percentage that had difficulty paying medical bills in the last 90 days
-6,Cleveland Road,medicalbills,17.22222222,pct,Percentage that had difficulty paying medical bills in the last 90 days
-7,Fowler Drive,medicalbills,19.23076923,pct,Percentage that had difficulty paying medical bills in the last 90 days
-8,Gaines,medicalbills,16.85393258,pct,Percentage that had difficulty paying medical bills in the last 90 days
-9,Howard B Stroud,medicalbills,13.93939394,pct,Percentage that had difficulty paying medical bills in the last 90 days
-10,Judia Jackson Harris,medicalbills,19.75308642,pct,Percentage that had difficulty paying medical bills in the last 90 days
-11,Choice Zone-East,medicalbills,17.91044776,pct,Percentage that had difficulty paying medical bills in the last 90 days
-12,Oglethorpe,medicalbills,15.55555556,pct,Percentage that had difficulty paying medical bills in the last 90 days
-13,Timothy Rd.,medicalbills,11.42857143,pct,Percentage that had difficulty paying medical bills in the last 90 days
-14,Whit Davis,medicalbills,13.06306306,pct,Percentage that had difficulty paying medical bills in the last 90 days
-15,Whitehead Rd.,medicalbills,21.3740458,pct,Percentage that had difficulty paying medical bills in the last 90 days
-16,Winterville,medicalbills,15.97222222,pct,Percentage that had difficulty paying medical bills in the last 90 days
-0,Unclassified,medicalbills,16.83937824,pct,Percentage that had difficulty paying medical bills in the last 90 days
 1,Alps Road,utilitybills,52,count,Number that had difficulty paying utility bills in the last 90 days
 2,Barnett Shoals,utilitybills,43,count,Number that had difficulty paying utility bills in the last 90 days
 3,Barrow,utilitybills,54,count,Number that had difficulty paying utility bills in the last 90 days
@@ -271,23 +169,6 @@ SchoolID,School,var,est,type,description
 15,Whitehead Rd.,utilitybills,59,count,Number that had difficulty paying utility bills in the last 90 days
 16,Winterville,utilitybills,37,count,Number that had difficulty paying utility bills in the last 90 days
 0,Unclassified,utilitybills,94,count,Number that had difficulty paying utility bills in the last 90 days
-1,Alps Road,utilitybills,33.12101911,pct,Percentage that had difficulty paying utility bills in the last 90 days
-2,Barnett Shoals,utilitybills,16.47509579,pct,Percentage that had difficulty paying utility bills in the last 90 days
-3,Barrow,utilitybills,12.85714286,pct,Percentage that had difficulty paying utility bills in the last 90 days
-4,Choice Zone-West,utilitybills,34.61538462,pct,Percentage that had difficulty paying utility bills in the last 90 days
-5,Chase Street,utilitybills,12.67942584,pct,Percentage that had difficulty paying utility bills in the last 90 days
-6,Cleveland Road,utilitybills,25.55555556,pct,Percentage that had difficulty paying utility bills in the last 90 days
-7,Fowler Drive,utilitybills,31.53846154,pct,Percentage that had difficulty paying utility bills in the last 90 days
-8,Gaines,utilitybills,35.95505618,pct,Percentage that had difficulty paying utility bills in the last 90 days
-9,Howard B Stroud,utilitybills,36.36363636,pct,Percentage that had difficulty paying utility bills in the last 90 days
-10,Judia Jackson Harris,utilitybills,30.86419753,pct,Percentage that had difficulty paying utility bills in the last 90 days
-11,Choice Zone-East,utilitybills,35.32338308,pct,Percentage that had difficulty paying utility bills in the last 90 days
-12,Oglethorpe,utilitybills,16.44444444,pct,Percentage that had difficulty paying utility bills in the last 90 days
-13,Timothy Rd.,utilitybills,18.28571429,pct,Percentage that had difficulty paying utility bills in the last 90 days
-14,Whit Davis,utilitybills,18.01801802,pct,Percentage that had difficulty paying utility bills in the last 90 days
-15,Whitehead Rd.,utilitybills,22.51908397,pct,Percentage that had difficulty paying utility bills in the last 90 days
-16,Winterville,utilitybills,25.69444444,pct,Percentage that had difficulty paying utility bills in the last 90 days
-0,Unclassified,utilitybills,24.35233161,pct,Percentage that had difficulty paying utility bills in the last 90 days
 1,Alps Road,creditbills,32,count,Number that had difficulty paying credit card bills in the last 90 days
 2,Barnett Shoals,creditbills,55,count,Number that had difficulty paying credit card bills in the last 90 days
 3,Barrow,creditbills,59,count,Number that had difficulty paying credit card bills in the last 90 days
@@ -305,20 +186,530 @@ SchoolID,School,var,est,type,description
 15,Whitehead Rd.,creditbills,62,count,Number that had difficulty paying credit card bills in the last 90 days
 16,Winterville,creditbills,35,count,Number that had difficulty paying credit card bills in the last 90 days
 0,Unclassified,creditbills,70,count,Number that had difficulty paying credit card bills in the last 90 days
-1,Alps Road,creditbills,20.38216561,pct,Percentage that had difficulty paying credit card bills
-2,Barnett Shoals,creditbills,21.07279693,pct,Percentage that had difficulty paying credit card bills
-3,Barrow,creditbills,14.04761905,pct,Percentage that had difficulty paying credit card bills
-4,Choice Zone-West,creditbills,24.72527473,pct,Percentage that had difficulty paying credit card bills
-5,Chase Street,creditbills,15.55023923,pct,Percentage that had difficulty paying credit card bills
-6,Cleveland Road,creditbills,21.11111111,pct,Percentage that had difficulty paying credit card bills
-7,Fowler Drive,creditbills,16.92307692,pct,Percentage that had difficulty paying credit card bills
-8,Gaines,creditbills,25.28089888,pct,Percentage that had difficulty paying credit card bills
-9,Howard B Stroud,creditbills,21.21212121,pct,Percentage that had difficulty paying credit card bills
-10,Judia Jackson Harris,creditbills,27.16049383,pct,Percentage that had difficulty paying credit card bills
-11,Choice Zone-East,creditbills,18.90547264,pct,Percentage that had difficulty paying credit card bills
-12,Oglethorpe,creditbills,18.66666667,pct,Percentage that had difficulty paying credit card bills
-13,Timothy Rd.,creditbills,20.57142857,pct,Percentage that had difficulty paying credit card bills
-14,Whit Davis,creditbills,18.46846847,pct,Percentage that had difficulty paying credit card bills
-15,Whitehead Rd.,creditbills,23.66412214,pct,Percentage that had difficulty paying credit card bills
-16,Winterville,creditbills,24.30555556,pct,Percentage that had difficulty paying credit card bills
-0,Unclassified,creditbills,18.13471503,pct,Percentage that had difficulty paying credit card bills
+1,Alps Road,employloss,28.005444,pct,Percentage that lost a job in the last 12 months
+2,Barnett Shoals,employloss,13.824317,pct,Percentage that lost a job in the last 12 months
+3,Barrow,employloss,11.152494,pct,Percentage that lost a job in the last 12 months
+4,Choice Zone-West,employloss,24.607791,pct,Percentage that lost a job in the last 12 months
+5,Chase Street,employloss,14.9005,pct,Percentage that lost a job in the last 12 months
+6,Cleveland Road,employloss,9.267654,pct,Percentage that lost a job in the last 12 months
+7,Fowler Drive,employloss,18.597864,pct,Percentage that lost a job in the last 12 months
+8,Gaines,employloss,21.309138,pct,Percentage that lost a job in the last 12 months
+9,Howard B Stroud,employloss,20.374158,pct,Percentage that lost a job in the last 12 months
+10,Judia Jackson Harris,employloss,14.497765,pct,Percentage that lost a job in the last 12 months
+11,Choice Zone-East,employloss,37.817847,pct,Percentage that lost a job in the last 12 months
+12,Oglethorpe,employloss,14.366364,pct,Percentage that lost a job in the last 12 months
+13,Timothy Rd.,employloss,8.530452,pct,Percentage that lost a job in the last 12 months
+14,Whit Davis,employloss,18.869676,pct,Percentage that lost a job in the last 12 months
+15,Whitehead Rd.,employloss,12.840765,pct,Percentage that lost a job in the last 12 months
+16,Winterville,employloss,20.506555,pct,Percentage that lost a job in the last 12 months
+0,Unclassified,employloss,19.638471,pct,Percentage that lost a job in the last 12 months
+1,Alps Road,evictthreat,20.50036572,pct,Percentage that were threatened with eviction in the last 90 days
+2,Barnett Shoals,evictthreat,2.377744748,pct,Percentage that were threatened with eviction in the last 90 days
+3,Barrow,evictthreat,1.967224696,pct,Percentage that were threatened with eviction in the last 90 days
+4,Choice Zone-West,evictthreat,7.359630121,pct,Percentage that were threatened with eviction in the last 90 days
+5,Chase Street,evictthreat,3.222675026,pct,Percentage that were threatened with eviction in the last 90 days
+6,Cleveland Road,evictthreat,1.845929612,pct,Percentage that were threatened with eviction in the last 90 days
+7,Fowler Drive,evictthreat,8.514233663,pct,Percentage that were threatened with eviction in the last 90 days
+8,Gaines,evictthreat,8.679426835,pct,Percentage that were threatened with eviction in the last 90 days
+9,Howard B Stroud,evictthreat,8.43588942,pct,Percentage that were threatened with eviction in the last 90 days
+10,Judia Jackson Harris,evictthreat,5.376999359,pct,Percentage that were threatened with eviction in the last 90 days
+11,Choice Zone-East,evictthreat,16.3817535,pct,Percentage that were threatened with eviction in the last 90 days
+12,Oglethorpe,evictthreat,1.59250465,pct,Percentage that were threatened with eviction in the last 90 days
+13,Timothy Rd.,evictthreat,4.271129668,pct,Percentage that were threatened with eviction in the last 90 days
+14,Whit Davis,evictthreat,5.267486667,pct,Percentage that were threatened with eviction in the last 90 days
+15,Whitehead Rd.,evictthreat,1.646288333,pct,Percentage that were threatened with eviction in the last 90 days
+16,Winterville,evictthreat,3.002828774,pct,Percentage that were threatened with eviction in the last 90 days
+0,Unclassified,evictthreat,8.752293182,pct,Percentage that were threatened with eviction in the last 90 days
+1,Alps Road,loan,6.336705354,pct,Percent who took out a high interest loan in the last 90 days
+2,Barnett Shoals,loan,4.830019401,pct,Percent who took out a high interest loan in the last 90 days
+3,Barrow,loan,5.525578349,pct,Percent who took out a high interest loan in the last 90 days
+4,Choice Zone-West,loan,3.955900768,pct,Percent who took out a high interest loan in the last 90 days
+5,Chase Street,loan,2.342237485,pct,Percent who took out a high interest loan in the last 90 days
+6,Cleveland Road,loan,3.599992896,pct,Percent who took out a high interest loan in the last 90 days
+7,Fowler Drive,loan,9.982649877,pct,Percent who took out a high interest loan in the last 90 days
+8,Gaines,loan,11.09813159,pct,Percent who took out a high interest loan in the last 90 days
+9,Howard B Stroud,loan,7.791836214,pct,Percent who took out a high interest loan in the last 90 days
+10,Judia Jackson Harris,loan,14.13502958,pct,Percent who took out a high interest loan in the last 90 days
+11,Choice Zone-East,loan,7.559959912,pct,Percent who took out a high interest loan in the last 90 days
+12,Oglethorpe,loan,5.953760462,pct,Percent who took out a high interest loan in the last 90 days
+13,Timothy Rd.,loan,5.167111262,pct,Percent who took out a high interest loan in the last 90 days
+14,Whit Davis,loan,1.998424389,pct,Percent who took out a high interest loan in the last 90 days
+15,Whitehead Rd.,loan,8.258706927,pct,Percent who took out a high interest loan in the last 90 days
+16,Winterville,loan,13.64765048,pct,Percent who took out a high interest loan in the last 90 days
+0,Unclassified,loan,13.62017061,pct,Percent who took out a high interest loan in the last 90 days
+1,Alps Road,internet_none,0,pct,Percentage without Internet Access at home
+2,Barnett Shoals,internet_none,0.103715083,pct,Percentage without Internet Access at home
+3,Barrow,internet_none,0.33268033,pct,Percentage without Internet Access at home
+4,Choice Zone-West,internet_none,0.973746758,pct,Percentage without Internet Access at home
+5,Chase Street,internet_none,0.25178547,pct,Percentage without Internet Access at home
+6,Cleveland Road,internet_none,4.353873863,pct,Percentage without Internet Access at home
+7,Fowler Drive,internet_none,1.273115425,pct,Percentage without Internet Access at home
+8,Gaines,internet_none,0.445085529,pct,Percentage without Internet Access at home
+9,Howard B Stroud,internet_none,4.190727895,pct,Percentage without Internet Access at home
+10,Judia Jackson Harris,internet_none,0.782878354,pct,Percentage without Internet Access at home
+11,Choice Zone-East,internet_none,2.169716765,pct,Percentage without Internet Access at home
+12,Oglethorpe,internet_none,0.171177311,pct,Percentage without Internet Access at home
+13,Timothy Rd.,internet_none,0,pct,Percentage without Internet Access at home
+14,Whit Davis,internet_none,0.258404495,pct,Percentage without Internet Access at home
+15,Whitehead Rd.,internet_none,0.03499921,pct,Percentage without Internet Access at home
+16,Winterville,internet_none,1.10135625,pct,Percentage without Internet Access at home
+0,Unclassified,internet_none,6.59635828,pct,Percentage without Internet Access at home
+1,Alps Road,welfarebenefit,49.28827767,pct,Percentage receiving welfare benefits
+2,Barnett Shoals,welfarebenefit,18.4031641,pct,Percentage receiving welfare benefits
+3,Barrow,welfarebenefit,16.20172438,pct,Percentage receiving welfare benefits
+4,Choice Zone-West,welfarebenefit,50.6916269,pct,Percentage receiving welfare benefits
+5,Chase Street,welfarebenefit,14.78295581,pct,Percentage receiving welfare benefits
+6,Cleveland Road,welfarebenefit,34.995337,pct,Percentage receiving welfare benefits
+7,Fowler Drive,welfarebenefit,40.09229889,pct,Percentage receiving welfare benefits
+8,Gaines,welfarebenefit,36.42547174,pct,Percentage receiving welfare benefits
+9,Howard B Stroud,welfarebenefit,44.43878815,pct,Percentage receiving welfare benefits
+10,Judia Jackson Harris,welfarebenefit,31.28649459,pct,Percentage receiving welfare benefits
+11,Choice Zone-East,welfarebenefit,45.07445204,pct,Percentage receiving welfare benefits
+12,Oglethorpe,welfarebenefit,23.62345795,pct,Percentage receiving welfare benefits
+13,Timothy Rd.,welfarebenefit,20.45989065,pct,Percentage receiving welfare benefits
+14,Whit Davis,welfarebenefit,18.74326939,pct,Percentage receiving welfare benefits
+15,Whitehead Rd.,welfarebenefit,22.88136235,pct,Percentage receiving welfare benefits
+16,Winterville,welfarebenefit,28.07069357,pct,Percentage receiving welfare benefits
+0,Unclassified,welfarebenefit,43.67979802,pct,Percentage receiving welfare benefits
+1,Alps Road,internet_none,4.170356391,pct,Percentage without Internet Access at home
+2,Barnett Shoals,internet_none,0.178144445,pct,Percentage without Internet Access at home
+3,Barrow,internet_none,2.130080409,Percentage not receiving welfare bene,Percentage without Internet Access at home
+4,Choice Zone-West,internet_none,4.249232184,pct,Percentage without Internet Access at home
+5,Chase Street,internet_none,0.454965774,pct,Percentage without Internet Access at home
+6,Cleveland Road,internet_none,0,pct,Percentage without Internet Access at home
+7,Fowler Drive,internet_none,0,pct,Percentage without Internet Access at home
+8,Gaines,internet_none,1.915310319,pct,Percentage without Internet Access at home
+9,Howard B Stroud,internet_none,4.328541441,pct,Percentage without Internet Access at home
+10,Judia Jackson Harris,internet_none,0.637377985,pct,Percentage without Internet Access at home
+11,Choice Zone-East,internet_none,2.657727922,pct,Percentage without Internet Access at home
+12,Oglethorpe,internet_none,0.171177311,pct,Percentage without Internet Access at home
+13,Timothy Rd.,internet_none,0.175265177,pct,Percentage without Internet Access at home
+14,Whit Davis,internet_none,0.146793925,pct,Percentage without Internet Access at home
+15,Whitehead Rd.,internet_none,0,pct,Percentage without Internet Access at home
+16,Winterville,internet_none,0.047362048,pct,Percentage without Internet Access at home
+0,Unclassified,internet_none,1.190795189,pct,Percentage receiving SNAP
+1,Alps Road,snap,30.28073206,pct,Percentage receiving SNAP
+2,Barnett Shoals,snap,4.255776784,pct,Percentage receiving SNAP
+3,Barrow,snap,3.585517472,pct,Percentage receiving SNAP
+4,Choice Zone-West,snap,29.9723173,pct,Percentage receiving SNAP
+5,Chase Street,snap,6.032638364,pct,Percentage receiving SNAP
+6,Cleveland Road,snap,15.77212538,pct,Percentage receiving SNAP
+7,Fowler Drive,snap,25.92565503,pct,Percentage receiving SNAP
+8,Gaines,snap,25.45522763,pct,Percentage receiving SNAP
+9,Howard B Stroud,snap,24.55625399,pct,Percentage receiving SNAP
+10,Judia Jackson Harris,snap,11.90048078,pct,Percentage receiving SNAP
+11,Choice Zone-East,snap,24.69105528,pct,Percentage receiving SNAP
+12,Oglethorpe,snap,13.19183168,pct,Percentage receiving SNAP
+13,Timothy Rd.,snap,6.644548751,pct,Percentage receiving SNAP
+14,Whit Davis,snap,10.53520212,pct,Percentage receiving SNAP
+15,Whitehead Rd.,snap,10.66068239,pct,Percentage receiving SNAP
+16,Winterville,snap,18.19796201,pct,Percentage receiving SNAP
+0,Unclassified,snap,26.78928471,pct,Percentage receiving SNAP
+1,Alps Road,ssdi,12.37133531,pct,Percentage on SSDI
+2,Barnett Shoals,ssdi,0.622290497,pct,Percentage on SSDI
+3,Barrow,ssdi,2.524369683,pct,Percentage on SSDI
+4,Choice Zone-West,ssdi,5.211234776,pct,Percentage on SSDI
+5,Chase Street,ssdi,1.121739864,pct,Percentage on SSDI
+6,Cleveland Road,ssdi,1.298499667,pct,Percentage on SSDI
+7,Fowler Drive,ssdi,1.981743301,pct,Percentage on SSDI
+8,Gaines,ssdi,6.414538174,pct,Percentage on SSDI
+9,Howard B Stroud,ssdi,4.115014797,pct,Percentage on SSDI
+10,Judia Jackson Harris,ssdi,3.131513415,pct,Percentage on SSDI
+11,Choice Zone-East,ssdi,3.377654848,pct,Percentage on SSDI
+12,Oglethorpe,ssdi,1.966493773,pct,Percentage on SSDI
+13,Timothy Rd.,ssdi,3.938554086,pct,Percentage on SSDI
+14,Whit Davis,ssdi,0.946810529,pct,Percentage on SSDI
+15,Whitehead Rd.,ssdi,3.352756727,pct,Percentage on SSDI
+16,Winterville,ssdi,1.86147922,pct,Percentage on SSDI
+0,Unclassified,ssdi,11.55859604,pct,Percentage on SSDI
+1,Alps Road,ssi,8.990017913,pct,Percentage on SSI
+2,Barnett Shoals,ssi,4.633012255,pct,Percentage on SSI
+3,Barrow,ssi,3.401498845,pct,Percentage on SSI
+4,Choice Zone-West,ssi,1.298329011,pct,Percentage on SSI
+5,Chase Street,ssi,0.222728576,pct,Percentage on SSI
+6,Cleveland Road,ssi,10.50474052,pct,Percentage on SSI
+7,Fowler Drive,ssi,2.312033851,pct,Percentage on SSI
+8,Gaines,ssi,2.347723218,pct,Percentage on SSI
+9,Howard B Stroud,ssi,8.475267468,pct,Percentage on SSI
+10,Judia Jackson Harris,ssi,3.099018308,pct,Percentage on SSI
+11,Choice Zone-East,ssi,3.632423884,pct,Percentage on SSI
+12,Oglethorpe,ssi,1.452961839,pct,Percentage on SSI
+13,Timothy Rd.,ssi,2.712617034,pct,Percentage on SSI
+14,Whit Davis,ssi,5.821694455,pct,Percentage on SSI
+15,Whitehead Rd.,ssi,0.658515333,pct,Percentage on SSI
+16,Winterville,ssi,1.196080346,pct,Percentage on SSI
+0,Unclassified,ssi,11.82396791,pct,Percentage on SSI
+1,Alps Road,tanf,0.531917629,pct,Percentage receiving TANF
+2,Barnett Shoals,tanf,0,pct,Percentage receiving TANF
+3,Barrow,tanf,0.342192433,pct,Percentage receiving TANF
+4,Choice Zone-West,tanf,0.649164505,pct,Percentage receiving TANF
+5,Chase Street,tanf,1.629311195,pct,Percentage receiving TANF
+6,Cleveland Road,tanf,0.592338821,pct,Percentage receiving TANF
+7,Fowler Drive,tanf,0.99087165,pct,Percentage receiving TANF
+8,Gaines,tanf,0.813296773,pct,Percentage receiving TANF
+9,Howard B Stroud,tanf,1.4374591,pct,Percentage receiving TANF
+10,Judia Jackson Harris,tanf,0,pct,Percentage receiving TANF
+11,Choice Zone-East,tanf,0,pct,Percentage receiving TANF
+12,Oglethorpe,tanf,2.905923678,pct,Percentage receiving TANF
+13,Timothy Rd.,tanf,1.050781207,pct,Percentage receiving TANF
+14,Whit Davis,tanf,0.241199785,pct,Percentage receiving TANF
+15,Whitehead Rd.,tanf,1.820005587,pct,Percentage receiving TANF
+16,Winterville,tanf,0.047362048,pct,Percentage receiving TANF
+0,Unclassified,tanf,0.843896129,pct,Percentage receiving TANF
+1,Alps Road,wic,3.956214519,pct,Percentage receiving WIC
+2,Barnett Shoals,wic,0.77114922,pct,Percentage receiving WIC
+3,Barrow,wic,1.314812748,pct,Percentage receiving WIC
+4,Choice Zone-West,wic,10.59520029,pct,Percentage receiving WIC
+5,Chase Street,wic,1.156731493,pct,Percentage receiving WIC
+6,Cleveland Road,wic,2.149374178,pct,Percentage receiving WIC
+7,Fowler Drive,wic,10.62954136,pct,Percentage receiving WIC
+8,Gaines,wic,7.64595937,pct,Percentage receiving WIC
+9,Howard B Stroud,wic,7.687887161,pct,Percentage receiving WIC
+10,Judia Jackson Harris,wic,1.565756708,pct,Percentage receiving WIC
+11,Choice Zone-East,wic,7.845136071,pct,Percentage receiving WIC
+12,Oglethorpe,wic,0.987757467,pct,Percentage receiving WIC
+13,Timothy Rd.,wic,4.379700066,pct,Percentage receiving WIC
+14,Whit Davis,wic,4.158425914,pct,Percentage receiving WIC
+15,Whitehead Rd.,wic,0.823144167,pct,Percentage receiving WIC
+16,Winterville,wic,0.76012297,pct,Percentage receiving WIC
+0,Unclassified,wic,3.271327927,pct,Percentage receiving WIC
+1,Alps Road,caps,1.339197189,pct,Percentage receiving CAPS
+2,Barnett Shoals,caps,0.178144445,pct,Percentage receiving CAPS
+3,Barrow,caps,0.629610301,pct,Percentage receiving CAPS
+4,Choice Zone-West,caps,0,pct,Percentage receiving CAPS
+5,Chase Street,caps,0.319829931,pct,Percentage receiving CAPS
+6,Cleveland Road,caps,1.842200197,pct,Percentage receiving CAPS
+7,Fowler Drive,caps,0.33029055,pct,Percentage receiving CAPS
+8,Gaines,caps,3.415647906,pct,Percentage receiving CAPS
+9,Howard B Stroud,caps,0.658139472,pct,Percentage receiving CAPS
+10,Judia Jackson Harris,caps,0.782878354,pct,Percentage receiving CAPS
+11,Choice Zone-East,caps,1.156004046,pct,Percentage receiving CAPS
+12,Oglethorpe,caps,1.452961839,pct,Percentage receiving CAPS
+13,Timothy Rd.,caps,0.448045463,pct,Percentage receiving CAPS
+14,Whit Davis,caps,0.146793925,pct,Percentage receiving CAPS
+15,Whitehead Rd.,caps,0.329257667,pct,Percentage receiving CAPS
+16,Winterville,caps,1.066914031,pct,Percentage receiving CAPS
+0,Unclassified,caps,1.917447207,pct,Percentage receiving CAPS
+1,Alps Road,medicalbills,18.98785939,pct,Percentage that had difficulty paying medical bills in the last 90 days
+2,Barnett Shoals,medicalbills,14.91703415,pct,Percentage that had difficulty paying medical bills in the last 90 days
+3,Barrow,medicalbills,7.363178165,pct,Percentage that had difficulty paying medical bills in the last 90 days
+4,Choice Zone-West,medicalbills,15.86117424,pct,Percentage that had difficulty paying medical bills in the last 90 days
+5,Chase Street,medicalbills,10.02567281,pct,Percentage that had difficulty paying medical bills in the last 90 days
+6,Cleveland Road,medicalbills,13.40477113,pct,Percentage that had difficulty paying medical bills in the last 90 days
+7,Fowler Drive,medicalbills,16.67851755,pct,Percentage that had difficulty paying medical bills in the last 90 days
+8,Gaines,medicalbills,18.72957072,pct,Percentage that had difficulty paying medical bills in the last 90 days
+9,Howard B Stroud,medicalbills,12.43420765,pct,Percentage that had difficulty paying medical bills in the last 90 days
+10,Judia Jackson Harris,medicalbills,21.0103096,pct,Percentage that had difficulty paying medical bills in the last 90 days
+11,Choice Zone-East,medicalbills,18.56438755,pct,Percentage that had difficulty paying medical bills in the last 90 days
+12,Oglethorpe,medicalbills,14.64292033,pct,Percentage that had difficulty paying medical bills in the last 90 days
+13,Timothy Rd.,medicalbills,11.01717104,pct,Percentage that had difficulty paying medical bills in the last 90 days
+14,Whit Davis,medicalbills,17.01857292,pct,Percentage that had difficulty paying medical bills in the last 90 days
+15,Whitehead Rd.,medicalbills,17.87644774,pct,Percentage that had difficulty paying medical bills in the last 90 days
+16,Winterville,medicalbills,11.46295832,pct,Percentage that had difficulty paying medical bills in the last 90 days
+0,Unclassified,medicalbills,20.49504199,pct,Percentage that had difficulty paying medical bills in the last 90 days
+1,Alps Road,utilitybills,33.09670538,pct,Percentage that had difficulty paying utility bills in the last 90 days
+2,Barnett Shoals,utilitybills,14.05628355,pct,Percentage that had difficulty paying utility bills in the last 90 days
+3,Barrow,utilitybills,12.46590179,pct,Percentage that had difficulty paying utility bills in the last 90 days
+4,Choice Zone-West,utilitybills,32.32163367,pct,Percentage that had difficulty paying utility bills in the last 90 days
+5,Chase Street,utilitybills,12.05282889,pct,Percentage that had difficulty paying utility bills in the last 90 days
+6,Cleveland Road,utilitybills,26.79961249,pct,Percentage that had difficulty paying utility bills in the last 90 days
+7,Fowler Drive,utilitybills,26.65201686,pct,Percentage that had difficulty paying utility bills in the last 90 days
+8,Gaines,utilitybills,27.14153863,pct,Percentage that had difficulty paying utility bills in the last 90 days
+9,Howard B Stroud,utilitybills,29.78376782,pct,Percentage that had difficulty paying utility bills in the last 90 days
+10,Judia Jackson Harris,utilitybills,37.82190487,pct,Percentage that had difficulty paying utility bills in the last 90 days
+11,Choice Zone-East,utilitybills,41.94995058,pct,Percentage that had difficulty paying utility bills in the last 90 days
+12,Oglethorpe,utilitybills,19.03925551,pct,Percentage that had difficulty paying utility bills in the last 90 days
+13,Timothy Rd.,utilitybills,19.51729187,pct,Percentage that had difficulty paying utility bills in the last 90 days
+14,Whit Davis,utilitybills,16.9699106,pct,Percentage that had difficulty paying utility bills in the last 90 days
+15,Whitehead Rd.,utilitybills,25.64534511,pct,Percentage that had difficulty paying utility bills in the last 90 days
+16,Winterville,utilitybills,34.13215869,pct,Percentage that had difficulty paying utility bills in the last 90 days
+0,Unclassified,utilitybills,22.61025651,pct,Percentage that had difficulty paying utility bills in the last 90 days
+1,Alps Road,creditbills,19.35011714,pct,Percentage that had difficulty paying credit card bills
+2,Barnett Shoals,creditbills,21.78141147,pct,Percentage that had difficulty paying credit card bills
+3,Barrow,creditbills,15.30138316,pct,Percentage that had difficulty paying credit card bills
+4,Choice Zone-West,creditbills,27.6003034,pct,Percentage that had difficulty paying credit card bills
+5,Chase Street,creditbills,13.51895894,pct,Percentage that had difficulty paying credit card bills
+6,Cleveland Road,creditbills,8.492000937,pct,Percentage that had difficulty paying credit card bills
+7,Fowler Drive,creditbills,17.45830796,pct,Percentage that had difficulty paying credit card bills
+8,Gaines,creditbills,25.20917991,pct,Percentage that had difficulty paying credit card bills
+9,Howard B Stroud,creditbills,20.99502626,pct,Percentage that had difficulty paying credit card bills
+10,Judia Jackson Harris,creditbills,33.57958247,pct,Percentage that had difficulty paying credit card bills
+11,Choice Zone-East,creditbills,16.06315289,pct,Percentage that had difficulty paying credit card bills
+12,Oglethorpe,creditbills,25.62080712,pct,Percentage that had difficulty paying credit card bills
+13,Timothy Rd.,creditbills,25.00339221,pct,Percentage that had difficulty paying credit card bills
+14,Whit Davis,creditbills,20.28723813,pct,Percentage that had difficulty paying credit card bills
+15,Whitehead Rd.,creditbills,22.9891392,pct,Percentage that had difficulty paying credit card bills
+16,Winterville,creditbills,18.03477398,pct,Percentage that had difficulty paying credit card bills
+0,Unclassified,creditbills,18.38029471,pct,Percentage that had difficulty paying credit card bills
+1,Alps Road,register_vote,81.23315866,pct,Percentage registered to vote
+2,Barnett Shoals,register_vote,91.29616502,pct,Percentage registered to vote
+3,Barrow,register_vote,83.63832961,pct,Percentage registered to vote
+4,Choice Zone-West,register_vote,56.72165265,pct,Percentage registered to vote
+5,Chase Street,register_vote,89.70709145,pct,Percentage registered to vote
+6,Cleveland Road,register_vote,72.35052839,pct,Percentage registered to vote
+7,Fowler Drive,register_vote,60.03786523,pct,Percentage registered to vote
+8,Gaines,register_vote,85.75119167,pct,Percentage registered to vote
+9,Howard B Stroud,register_vote,77.68604352,pct,Percentage registered to vote
+10,Judia Jackson Harris,register_vote,78.85163749,pct,Percentage registered to vote
+11,Choice Zone-East,register_vote,80.59513639,pct,Percentage registered to vote
+12,Oglethorpe,register_vote,81.65617401,pct,Percentage registered to vote
+13,Timothy Rd.,register_vote,88.08619481,pct,Percentage registered to vote
+14,Whit Davis,register_vote,89.49290863,pct,Percentage registered to vote
+15,Whitehead Rd.,register_vote,91.57717312,pct,Percentage registered to vote
+16,Winterville,register_vote,85.23057841,pct,Percentage registered to vote
+0,Unclassified,register_vote,69.43155251,pct,Percentage registered to vote
+1,Alps Road,corr_year,8.198894452,pct,Percentage that Corresponded with Politician
+2,Barnett Shoals,corr_year,25.49029307,pct,Percentage that Corresponded with Politician
+3,Barrow,corr_year,24.63914529,pct,Percentage that Corresponded with Politician
+4,Choice Zone-West,corr_year,4.770152763,pct,Percentage that Corresponded with Politician
+5,Chase Street,corr_year,36.09716046,pct,Percentage that Corresponded with Politician
+6,Cleveland Road,corr_year,3.192396778,pct,Percentage that Corresponded with Politician
+7,Fowler Drive,corr_year,8.954312578,pct,Percentage that Corresponded with Politician
+8,Gaines,corr_year,21.05173259,pct,Percentage that Corresponded with Politician
+9,Howard B Stroud,corr_year,9.091772674,pct,Percentage that Corresponded with Politician
+10,Judia Jackson Harris,corr_year,3.131513415,pct,Percentage that Corresponded with Politician
+11,Choice Zone-East,corr_year,11.85538101,pct,Percentage that Corresponded with Politician
+12,Oglethorpe,corr_year,28.91282115,pct,Percentage that Corresponded with Politician
+13,Timothy Rd.,corr_year,24.70081974,pct,Percentage that Corresponded with Politician
+14,Whit Davis,corr_year,20.70431138,pct,Percentage that Corresponded with Politician
+15,Whitehead Rd.,corr_year,28.10597201,pct,Percentage that Corresponded with Politician
+16,Winterville,corr_year,15.79597722,pct,Percentage that Corresponded with Politician
+0,Unclassified,corr_year,20.21416267,pct,Percentage that Corresponded with Politician
+1,Alps Road,petition_year,17.29516605,pct,Percentage that Signed a Petition
+2,Barnett Shoals,petition_year,40.29517245,pct,Percentage that Signed a Petition
+3,Barrow,petition_year,40.79448292,pct,Percentage that Signed a Petition
+4,Choice Zone-West,petition_year,8.034305888,pct,Percentage that Signed a Petition
+5,Chase Street,petition_year,52.46134494,pct,Percentage that Signed a Petition
+6,Cleveland Road,petition_year,15.42234665,pct,Percentage that Signed a Petition
+7,Fowler Drive,petition_year,9.820275688,pct,Percentage that Signed a Petition
+8,Gaines,petition_year,38.48007469,pct,Percentage that Signed a Petition
+9,Howard B Stroud,petition_year,17.22780674,pct,Percentage that Signed a Petition
+10,Judia Jackson Harris,petition_year,15.70078628,pct,Percentage that Signed a Petition
+11,Choice Zone-East,petition_year,14.2967429,pct,Percentage that Signed a Petition
+12,Oglethorpe,petition_year,42.03495996,pct,Percentage that Signed a Petition
+13,Timothy Rd.,petition_year,32.62850808,pct,Percentage that Signed a Petition
+14,Whit Davis,petition_year,22.97961474,pct,Percentage that Signed a Petition
+15,Whitehead Rd.,petition_year,32.60412656,pct,Percentage that Signed a Petition
+16,Winterville,petition_year,14.42069328,pct,Percentage that Signed a Petition
+0,Unclassified,petition_year,23.72643069,pct,Percentage that Signed a Petition
+1,Alps Road,protest_year,4.29976494,pct,Percentage that Participated in a Protest
+2,Barnett Shoals,protest_year,17.35025589,pct,Percentage that Participated in a Protest
+3,Barrow,protest_year,15.75513384,pct,Percentage that Participated in a Protest
+4,Choice Zone-West,protest_year,1.524742101,pct,Percentage that Participated in a Protest
+5,Chase Street,protest_year,27.50377738,pct,Percentage that Participated in a Protest
+6,Cleveland Road,protest_year,4.867961913,pct,Percentage that Participated in a Protest
+7,Fowler Drive,protest_year,1.273115425,pct,Percentage that Participated in a Protest
+8,Gaines,protest_year,17.6632462,pct,Percentage that Participated in a Protest
+9,Howard B Stroud,protest_year,13.47938599,pct,Percentage that Participated in a Protest
+10,Judia Jackson Harris,protest_year,1.565756708,pct,Percentage that Participated in a Protest
+11,Choice Zone-East,protest_year,4.772857944,pct,Percentage that Participated in a Protest
+12,Oglethorpe,protest_year,26.56281027,pct,Percentage that Participated in a Protest
+13,Timothy Rd.,protest_year,11.92012773,pct,Percentage that Participated in a Protest
+14,Whit Davis,protest_year,8.206627741,pct,Percentage that Participated in a Protest
+15,Whitehead Rd.,protest_year,12.04744545,pct,Percentage that Participated in a Protest
+16,Winterville,protest_year,8.088601902,pct,Percentage that Participated in a Protest
+0,Unclassified,protest_year,9.14819775,pct,Percentage that Participated in a Protest
+1,Alps Road,meeting_year,8.761072256,pct,Percentage that Attended a Community Meeting
+2,Barnett Shoals,meeting_year,18.97318346,pct,Percentage that Attended a Community Meeting
+3,Barrow,meeting_year,18.83859512,pct,Percentage that Attended a Community Meeting
+4,Choice Zone-West,meeting_year,5.095146881,pct,Percentage that Attended a Community Meeting
+5,Chase Street,meeting_year,33.85763619,pct,Percentage that Attended a Community Meeting
+6,Cleveland Road,meeting_year,2.858593647,pct,Percentage that Attended a Community Meeting
+7,Fowler Drive,meeting_year,10.60576533,pct,Percentage that Attended a Community Meeting
+8,Gaines,meeting_year,19.81754485,pct,Percentage that Attended a Community Meeting
+9,Howard B Stroud,meeting_year,13.13833954,pct,Percentage that Attended a Community Meeting
+10,Judia Jackson Harris,meeting_year,38.34519659,pct,Percentage that Attended a Community Meeting
+11,Choice Zone-East,meeting_year,6.564065627,pct,Percentage that Attended a Community Meeting
+12,Oglethorpe,meeting_year,30.33670874,pct,Percentage that Attended a Community Meeting
+13,Timothy Rd.,meeting_year,20.82486973,pct,Percentage that Attended a Community Meeting
+14,Whit Davis,meeting_year,22.08240933,pct,Percentage that Attended a Community Meeting
+15,Whitehead Rd.,meeting_year,17.17592919,pct,Percentage that Attended a Community Meeting
+16,Winterville,meeting_year,11.92434836,pct,Percentage that Attended a Community Meeting
+0,Unclassified,meeting_year,15.55563352,pct,Percentage that Attended a Community Meeting
+1,Alps Road,vote_year,43.51289974,pct,Percentage who Voted in the Last Year
+2,Barnett Shoals,vote_year,66.13983298,pct,Percentage who Voted in the Last Year
+3,Barrow,vote_year,52.58526932,pct,Percentage who Voted in the Last Year
+4,Choice Zone-West,vote_year,22.81803834,pct,Percentage who Voted in the Last Year
+5,Chase Street,vote_year,73.71066079,pct,Percentage who Voted in the Last Year
+6,Cleveland Road,vote_year,35.15571063,pct,Percentage who Voted in the Last Year
+7,Fowler Drive,vote_year,39.78479055,pct,Percentage who Voted in the Last Year
+8,Gaines,vote_year,52.82002959,pct,Percentage who Voted in the Last Year
+9,Howard B Stroud,vote_year,42.93695802,pct,Percentage who Voted in the Last Year
+10,Judia Jackson Harris,vote_year,50.20961543,pct,Percentage who Voted in the Last Year
+11,Choice Zone-East,vote_year,45.94593475,pct,Percentage who Voted in the Last Year
+12,Oglethorpe,vote_year,56.72994437,pct,Percentage who Voted in the Last Year
+13,Timothy Rd.,vote_year,67.31908619,pct,Percentage who Voted in the Last Year
+14,Whit Davis,vote_year,68.68389996,pct,Percentage who Voted in the Last Year
+15,Whitehead Rd.,vote_year,56.34695051,pct,Percentage who Voted in the Last Year
+16,Winterville,vote_year,46.84007628,pct,Percentage who Voted in the Last Year
+0,Unclassified,vote_year,48.50758677,pct,Percentage who Voted in the Last Year
+1,Alps Road,religion,59.43462615,pct,
+2,Barnett Shoals,religion,38.13054912,pct,
+3,Barrow,religion,50.40929849,pct,
+4,Choice Zone-West,religion,87.46010505,pct,
+5,Chase Street,religion,35.38045473,pct,
+6,Cleveland Road,religion,58.33180502,pct,
+7,Fowler Drive,religion,67.00230413,pct,
+8,Gaines,religion,50.06408332,pct,
+9,Howard B Stroud,religion,52.34760615,pct,
+10,Judia Jackson Harris,religion,80.90075622,pct,
+11,Choice Zone-East,religion,67.75392304,pct,
+12,Oglethorpe,religion,50.40560435,pct,
+13,Timothy Rd.,religion,57.79654151,pct,
+14,Whit Davis,religion,51.80476891,pct,
+15,Whitehead Rd.,religion,55.01900464,pct,
+16,Winterville,religion,79.19176615,pct,
+0,Unclassified,religion,58.18339575,pct,
+1,Alps Road,cancer,6.039501356,pct,Percentage with a Cancer Diagnosis
+2,Barnett Shoals,cancer,8.528567639,pct,Percentage with a Cancer Diagnosis
+3,Barrow,cancer,8.608405623,pct,Percentage with a Cancer Diagnosis
+4,Choice Zone-West,cancer,3.638022527,pct,Percentage with a Cancer Diagnosis
+5,Chase Street,cancer,9.292140212,pct,Percentage with a Cancer Diagnosis
+6,Cleveland Road,cancer,10.22416603,pct,Percentage with a Cancer Diagnosis
+7,Fowler Drive,cancer,4.642301564,pct,Percentage with a Cancer Diagnosis
+8,Gaines,cancer,12.82699991,pct,Percentage with a Cancer Diagnosis
+9,Howard B Stroud,cancer,8.851496365,pct,Percentage with a Cancer Diagnosis
+10,Judia Jackson Harris,cancer,12.50179683,pct,Percentage with a Cancer Diagnosis
+11,Choice Zone-East,cancer,9.70682341,pct,Percentage with a Cancer Diagnosis
+12,Oglethorpe,cancer,3.44624435,pct,Percentage with a Cancer Diagnosis
+13,Timothy Rd.,cancer,11.21532412,pct,Percentage with a Cancer Diagnosis
+14,Whit Davis,cancer,12.82137878,pct,Percentage with a Cancer Diagnosis
+15,Whitehead Rd.,cancer,7.097216674,pct,Percentage with a Cancer Diagnosis
+16,Winterville,cancer,7.931265728,pct,Percentage with a Cancer Diagnosis
+0,Unclassified,cancer,16.22996628,pct,Percentage with a Cancer Diagnosis
+1,Alps Road,diabetes,5.923826137,pct,Percentage with Diabetes
+2,Barnett Shoals,diabetes,8.857073199,pct,Percentage with Diabetes
+3,Barrow,diabetes,7.900806675,pct,Percentage with Diabetes
+4,Choice Zone-West,diabetes,8.573674645,pct,Percentage with Diabetes
+5,Chase Street,diabetes,4.938646479,pct,Percentage with Diabetes
+6,Cleveland Road,diabetes,7.721655208,pct,Percentage with Diabetes
+7,Fowler Drive,diabetes,7.393914424,pct,Percentage with Diabetes
+8,Gaines,diabetes,11.255549,pct,Percentage with Diabetes
+9,Howard B Stroud,diabetes,13.03348741,pct,Percentage with Diabetes
+10,Judia Jackson Harris,diabetes,16.52919386,pct,Percentage with Diabetes
+11,Choice Zone-East,diabetes,10.45885157,pct,Percentage with Diabetes
+12,Oglethorpe,diabetes,9.187443156,pct,Percentage with Diabetes
+13,Timothy Rd.,diabetes,10.82316154,pct,Percentage with Diabetes
+14,Whit Davis,diabetes,16.85155891,pct,Percentage with Diabetes
+15,Whitehead Rd.,diabetes,14.30069357,pct,Percentage with Diabetes
+16,Winterville,diabetes,18.09049977,pct,Percentage with Diabetes
+0,Unclassified,diabetes,19.50503966,pct,Percentage with Diabetes
+1,Alps Road,asthma,19.60805592,pct,Percentage with Asthma
+2,Barnett Shoals,asthma,16.0824884,pct,Percentage with Asthma
+3,Barrow,asthma,11.92700724,pct,Percentage with Asthma
+4,Choice Zone-West,asthma,9.374865694,pct,Percentage with Asthma
+5,Chase Street,asthma,19.33884302,pct,Percentage with Asthma
+6,Cleveland Road,asthma,10.5686907,pct,Percentage with Asthma
+7,Fowler Drive,asthma,18.12458829,pct,Percentage with Asthma
+8,Gaines,asthma,22.89038744,pct,Percentage with Asthma
+9,Howard B Stroud,asthma,22.26446884,pct,Percentage with Asthma
+10,Judia Jackson Harris,asthma,12.17425506,pct,Percentage with Asthma
+11,Choice Zone-East,asthma,27.12185499,pct,Percentage with Asthma
+12,Oglethorpe,asthma,15.32621383,pct,Percentage with Asthma
+13,Timothy Rd.,asthma,14.56247857,pct,Percentage with Asthma
+14,Whit Davis,asthma,11.11885851,pct,Percentage with Asthma
+15,Whitehead Rd.,asthma,17.93656156,pct,Percentage with Asthma
+16,Winterville,asthma,17.7931941,pct,Percentage with Asthma
+0,Unclassified,asthma,27.59179613,pct,Percentage with Asthma
+1,Alps Road,hbp,18.68524778,pct,Percentage with High Blood Pressure
+2,Barnett Shoals,hbp,30.41187331,pct,Percentage with High Blood Pressure
+3,Barrow,hbp,18.86691522,pct,Percentage with High Blood Pressure
+4,Choice Zone-West,hbp,26.9210662,pct,Percentage with High Blood Pressure
+5,Chase Street,hbp,19.73228793,pct,Percentage with High Blood Pressure
+6,Cleveland Road,hbp,18.15113536,pct,Percentage with High Blood Pressure
+7,Fowler Drive,hbp,32.94428264,pct,Percentage with High Blood Pressure
+8,Gaines,hbp,24.99646213,pct,Percentage with High Blood Pressure
+9,Howard B Stroud,hbp,26.0974349,pct,Percentage with High Blood Pressure
+10,Judia Jackson Harris,hbp,34.36246082,pct,Percentage with High Blood Pressure
+11,Choice Zone-East,hbp,27.82228029,pct,Percentage with High Blood Pressure
+12,Oglethorpe,hbp,32.16170478,pct,Percentage with High Blood Pressure
+13,Timothy Rd.,hbp,31.58709292,pct,Percentage with High Blood Pressure
+14,Whit Davis,hbp,36.39782463,pct,Percentage with High Blood Pressure
+15,Whitehead Rd.,hbp,33.22734437,pct,Percentage with High Blood Pressure
+16,Winterville,hbp,33.64768091,pct,Percentage with High Blood Pressure
+0,Unclassified,hbp,22.4385914,pct,Percentage with High Blood Pressure
+1,Alps Road,highchol,16.7174585,pct,Percentage with High Cholesterol
+2,Barnett Shoals,highchol,21.44245514,pct,Percentage with High Cholesterol
+3,Barrow,highchol,16.3884355,pct,Percentage with High Cholesterol
+4,Choice Zone-West,highchol,9.608747004,pct,Percentage with High Cholesterol
+5,Chase Street,highchol,19.62531114,pct,Percentage with High Cholesterol
+6,Cleveland Road,highchol,7.974008693,pct,Percentage with High Cholesterol
+7,Fowler Drive,highchol,18.1180608,pct,Percentage with High Cholesterol
+8,Gaines,highchol,24.82149664,pct,Percentage with High Cholesterol
+9,Howard B Stroud,highchol,11.34114243,pct,Percentage with High Cholesterol
+10,Judia Jackson Harris,highchol,21.62164362,pct,Percentage with High Cholesterol
+11,Choice Zone-East,highchol,20.78173383,pct,Percentage with High Cholesterol
+12,Oglethorpe,highchol,16.84846459,pct,Percentage with High Cholesterol
+13,Timothy Rd.,highchol,31.89481069,pct,Percentage with High Cholesterol
+14,Whit Davis,highchol,33.69253046,pct,Percentage with High Cholesterol
+15,Whitehead Rd.,highchol,27.51444981,pct,Percentage with High Cholesterol
+16,Winterville,highchol,18.62118125,pct,Percentage with High Cholesterol
+0,Unclassified,highchol,15.90047263,pct,Percentage with High Cholesterol
+1,Alps Road,arthritis,6.176870475,pct,Percentage with Arthritis
+2,Barnett Shoals,arthritis,13.62308626,pct,Percentage with Arthritis
+3,Barrow,arthritis,9.36771188,pct,Percentage with Arthritis
+4,Choice Zone-West,arthritis,10.74758125,pct,Percentage with Arthritis
+5,Chase Street,arthritis,6.830145381,pct,Percentage with Arthritis
+6,Cleveland Road,arthritis,12.73617252,pct,Percentage with Arthritis
+7,Fowler Drive,arthritis,18.52115948,pct,Percentage with Arthritis
+8,Gaines,arthritis,16.10048594,pct,Percentage with Arthritis
+9,Howard B Stroud,arthritis,14.86062797,pct,Percentage with Arthritis
+10,Judia Jackson Harris,arthritis,7.045905185,pct,Percentage with Arthritis
+11,Choice Zone-East,arthritis,8.114783946,pct,Percentage with Arthritis
+12,Oglethorpe,arthritis,20.74811116,pct,Percentage with Arthritis
+13,Timothy Rd.,arthritis,15.29925409,pct,Percentage with Arthritis
+14,Whit Davis,arthritis,16.9345839,pct,Percentage with Arthritis
+15,Whitehead Rd.,arthritis,19.00348764,pct,Percentage with Arthritis
+16,Winterville,arthritis,10.43922053,pct,Percentage with Arthritis
+0,Unclassified,arthritis,19.54234658,pct,Percentage with Arthritis
+1,Alps Road,obese,16.66398399,pct,Percentage with Obesity
+2,Barnett Shoals,obese,16.30793704,pct,Percentage with Obesity
+3,Barrow,obese,12.34221889,pct,Percentage with Obesity
+4,Choice Zone-West,obese,11.72173987,pct,Percentage with Obesity
+5,Chase Street,obese,10.933828,pct,Percentage with Obesity
+6,Cleveland Road,obese,10.5787744,pct,Percentage with Obesity
+7,Fowler Drive,obese,10.19861301,pct,Percentage with Obesity
+8,Gaines,obese,21.05747195,pct,Percentage with Obesity
+9,Howard B Stroud,obese,17.73561423,pct,Percentage with Obesity
+10,Judia Jackson Harris,obese,11.64002619,pct,Percentage with Obesity
+11,Choice Zone-East,obese,13.28072891,pct,Percentage with Obesity
+12,Oglethorpe,obese,18.03327009,pct,Percentage with Obesity
+13,Timothy Rd.,obese,19.59222449,pct,Percentage with Obesity
+14,Whit Davis,obese,19.73729079,pct,Percentage with Obesity
+15,Whitehead Rd.,obese,16.88867474,pct,Percentage with Obesity
+16,Winterville,obese,26.54072908,pct,Percentage with Obesity
+0,Unclassified,obese,15.77986149,pct,Percentage with Obesity
+1,Alps Road,depression,31.65114165,pct,Percentage with Depression
+2,Barnett Shoals,depression,38.11240258,pct,Percentage with Depression
+3,Barrow,depression,29.39893788,pct,Percentage with Depression
+4,Choice Zone-West,depression,13.99381564,pct,Percentage with Depression
+5,Chase Street,depression,36.5860146,pct,Percentage with Depression
+6,Cleveland Road,depression,25.57785472,pct,Percentage with Depression
+7,Fowler Drive,depression,25.55137134,pct,Percentage with Depression
+8,Gaines,depression,30.41914846,pct,Percentage with Depression
+9,Howard B Stroud,depression,37.71388628,pct,Percentage with Depression
+10,Judia Jackson Harris,depression,16.23414719,pct,Percentage with Depression
+11,Choice Zone-East,depression,32.73177665,pct,Percentage with Depression
+12,Oglethorpe,depression,30.78417902,pct,Percentage with Depression
+13,Timothy Rd.,depression,29.69993753,pct,Percentage with Depression
+14,Whit Davis,depression,23.15432856,pct,Percentage with Depression
+15,Whitehead Rd.,depression,33.96252986,pct,Percentage with Depression
+16,Winterville,depression,28.48787925,pct,Percentage with Depression
+0,Unclassified,depression,30.00405831,pct,Percentage with Depression
+1,Alps Road,anxiety,30.89299215,pct,Percentage with Anxiety
+2,Barnett Shoals,anxiety,49.27946572,pct,Percentage with Anxiety
+3,Barrow,anxiety,38.57953056,pct,Percentage with Anxiety
+4,Choice Zone-West,anxiety,15.74497083,pct,Percentage with Anxiety
+5,Chase Street,anxiety,51.73550747,pct,Percentage with Anxiety
+6,Cleveland Road,anxiety,30.70999729,pct,Percentage with Anxiety
+7,Fowler Drive,anxiety,35.65892975,pct,Percentage with Anxiety
+8,Gaines,anxiety,38.22127618,pct,Percentage with Anxiety
+9,Howard B Stroud,anxiety,44.27754875,pct,Percentage with Anxiety
+10,Judia Jackson Harris,anxiety,19.36566061,pct,Percentage with Anxiety
+11,Choice Zone-East,anxiety,32.41381124,pct,Percentage with Anxiety
+12,Oglethorpe,anxiety,33.43523028,pct,Percentage with Anxiety
+13,Timothy Rd.,anxiety,38.66317821,pct,Percentage with Anxiety
+14,Whit Davis,anxiety,35.08449944,pct,Percentage with Anxiety
+15,Whitehead Rd.,anxiety,43.54305884,pct,Percentage with Anxiety
+16,Winterville,anxiety,37.24506297,pct,Percentage with Anxiety
+0,Unclassified,anxiety,30.21304542,pct,Percentage with Anxiety

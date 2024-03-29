@@ -54,8 +54,10 @@ radioButtons("pct_count",HTML('Show the <b><i>population rate/percentage</b></i>
               c("Pop. rate/percentage" = "pct",
                 "Count of people" = "count"),
               selected = "pct")
+##filter by source, add civic vitality domain, maybe change domains by source?, talk about year option
+radioButtons("source","Select Source of Data",c("Census" = "z", "Athens Wellbeing Project" = "c"),selected="z")
 
- radioButtons("group","Choose your variable domain:",
+radioButtons("group","Choose your variable domain:",
               c("Demographics"="Demog",
                 #"Community Safety"="Safety",
                 "Healthy People & Environments"="Health",
@@ -64,92 +66,98 @@ radioButtons("pct_count",HTML('Show the <b><i>population rate/percentage</b></i>
                 "Lifelong Learning" = "Learning",
                 "Transportation" = "Transport"),
               selected="Demog")
- 
-
-
 
  conditionalPanel(
   condition="input.group =='Safety'",
    selectInput("variable1","Select your variable:",
                choices = select_safety)
  )
- 
+
  conditionalPanel(
   condition="input.group =='Demog' && input.pct_count=='count'",
    selectInput("variable2c","Select your variable:",
                 choices = select_demo_count)
  )
- 
+
   conditionalPanel(
   condition="input.group =='Demog' && input.pct_count=='pct'",
    selectInput("variable2p","Select your variable:",
                 choices = select_demo_pct)
  )
- 
+
  conditionalPanel(
   condition="input.group =='Health' && input.pct_count=='count'",
    selectInput("variable3c","Select your variable:",
                choices = select_health_count)
  )
- 
+
   conditionalPanel(
   condition="input.group =='Health' && input.pct_count=='pct'",
    selectInput("variable3p","Select your variable:",
                choices = select_health_pct)
  )
- 
- 
+  
+########
+ #    conditionalPanel(
+ #  condition="input.group=='Health' && input.pct_count=='pct'&& input.source =='AWP 3.0 Survey",
+ #   selectInput("variable65p","Select your variable:",
+ #              choices = select_health_pct_AWP)
+ # )
+
+######
+  
  conditionalPanel(
   condition="input.group=='Housing' && input.pct_count=='count'",
    selectInput("variable4c","Select your variable:",
                choices = select_housing_count)
  )
- 
+
   conditionalPanel(
   condition="input.group=='Housing' && input.pct_count=='pct'",
    selectInput("variable4p","Select your variable:",
                choices = select_housing_pct)
  )
- 
- 
+
+
  conditionalPanel(
   condition="input.group =='Income' && input.pct_count=='count'",
    selectInput("variable5c","Select your variable:",
                choices = select_incemploy_count)
- 
- ) 
- 
+
+ )
+
   conditionalPanel(
   condition="input.group =='Income' && input.pct_count=='pct'",
    selectInput("variable5p","Select your variable:",
                choices = select_incemploy_pct)
- 
- ) 
- 
+
+ )
+
  conditionalPanel(
   condition="input.group=='Learning' && input.pct_count=='count'",
    selectInput("variable6c","Select your variable:",
               choices = select_edu_count)
  )
- 
+
   conditionalPanel(
   condition="input.group=='Learning' && input.pct_count=='pct'",
    selectInput("variable6p","Select your variable:",
               choices = select_edu_pct)
  )
- 
+
+
  conditionalPanel(
   condition="input.group=='Transport' && input.pct_count=='count'",
    selectInput("variable7c","Select your variable:",
                choices = select_trans_count)
  )
- 
+
   conditionalPanel(
   condition="input.group=='Transport' && input.pct_count=='pct'",
    selectInput("variable7p","Select your variable:",
                choices = select_trans_pct)
  )
- 
+
 #Use the variable object to select the variable people choose. When the domain is chosen, the appropriate variables will
 #be loaded. 
  variable<-reactive({
@@ -163,6 +171,10 @@ radioButtons("pct_count",HTML('Show the <b><i>population rate/percentage</b></i>
      input$variable3c
    } else if (input$group=="Health" & input$pct_count=="pct") {
      input$variable3p
+     ####
+   } else if (input$group=="Health" & input$pct_count=="pct" & input$source =="AWP 3.0 Survey") {
+     input$variable65p
+   #   ####
    } else if (input$group=="Housing" & input$pct_count=="count") {
      input$variable4c
    } else if (input$group=="Housing" & input$pct_count=="pct") {
@@ -186,7 +198,7 @@ radioButtons("rpal", "Select method of grouping the variable", c("Bins" = "b", "
  
 radioButtons("ngroups","Classify the map data into how many equally sized groups?",c(2,3,4,5,6),selected=4)
 
-radioButtons("Area","Which location level data to display?",c("ECC Zones" = "z", "Census Tracts" = "c"),selected="z")
+
 ```
 
 Map by the [Community Mapping Lab](http://www.communitymappinglab.org)
@@ -225,18 +237,7 @@ filteredData_variable <- reactive({
   
   
   
-  #  adataset2 <- atlasdata2 %>% 
-  #  left_join(metadata_popup) %>% 
-  # filter(description == variable() & type == input$pct_count)
-  # suppressWarnings(left_join(es_zones, atlasdata2, by = "School") %>% 
-  #                    mutate(moe_disp=if_else(moe==-99,"NA",as.character(moe)),
-  #                     popup_text=paste("<b>Census Tract: </b>", 
-  #                                      #substr(GEOID,6,11),
-  #                                      "<br>",
-  #                                      "<b>School Zone(s): </b>", School,"<br>",  
-  #                                      "<b>",description,":</b> ", est,"<br>",
-  #                                      "<b>Estimate margin of error: </b>", moe,"<br>", sep = ""))) 
-    
+ 
   #subset the data
   suppressWarnings(#left_join(districts, adataset, by = "GEOID") %>%
     adataset %>%

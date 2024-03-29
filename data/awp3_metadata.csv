@@ -3,9 +3,34 @@ healthcover,Percentage without health coverage,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
 healthcover,Total without health coverage,AWP 3.0 Survey,0,0,1,0,0,0,0,count
 welfarebens,Percentage receiving welfare benefits,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
 welfarebens,Total receiving welfare benefits,AWP 3.0 Survey,0,0,1,0,0,0,0,count
-snap_p,Percentage receiving SNAP,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
+snap,Percentage receiving SNAP,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
 snap,Total receiving SNAP,AWP 3.0 Survey,0,0,1,0,0,0,0,count
 loan,Percentage who took out a high interest loan in the last 90 days.,AWP 3.0 Survey,0,0,0,0,1,0,0,pct
 loan,Number who took out a high interest loan in the last 90 days.,AWP 3.0 Survey,0,0,0,0,1,0,0,count
 evictthreat,Percentage that were threatened with eviction in the last 90 days,AWP 3.0 Survey,0,0,0,0,1,0,0,pct
 evictthreat,Number that were threatened with eviction in the last 90 days,AWP 3.0 Survey,0,0,0,0,1,0,0,count
+employloss,Percentage that lost a job in the last 12 months,AWP 3.0 Survey,0,0,0,0,1,0,0,pct
+internet_none,Percentage without Internet Access at home,AWP 3.0 Survey,0,0,0,1,0,0,0,pct
+ssdi,Percentage on SSDI,AWP 3.0 Survey,0,0,0,0,1,0,0,pct
+ssi,Percentage on SSI,AWP 3.0 Survey,0,0,0,0,1,0,0,pct
+tanf,Percentage receiving TANF,AWP 3.0 Survey,0,0,0,0,1,0,0,pct
+wic,Percentage receiving WIC,AWP 3.0 Survey,0,0,0,0,1,0,0,pct
+caps,Percentage receiving CAPS,AWP 3.0 Survey,0,0,0,0,1,0,0,pct
+utilitybills,Percentage that had difficulty paying utility bills in the last 90 days,AWP 3.0 Survey,0,0,0,0,1,0,0,pct
+creditbills,Percentage that had difficulty paying credit card bills,AWP 3.0 Survey,0,0,0,0,1,0,0,pct
+medicalbills,Percentage that had difficulty paying medical bills in the last 90 days,AWP 3.0 Survey,0,0,0,0,1,0,0,pct
+register_vote,Percentage registered to vote,AWP 3.0 Survey,0,1,0,0,0,0,0,pct
+corr_year,Percentage that Corresponded with Politician,AWP 3.0 Survey,0,1,0,0,0,0,0,pct
+petition_year,Percentage that Signed a Petition,AWP 3.0 Survey,0,1,0,0,0,0,0,pct
+protest_year,Percentage that Participated in a Protest,AWP 3.0 Survey,0,1,0,0,0,0,0,pct
+meeting_year,Percentage that Attended a Community Meeting,AWP 3.0 Survey,0,1,0,0,0,0,0,pct
+vote_year,Percentage who Voted in the Last Year,AWP 3.0 Survey,0,1,0,0,0,0,0,pct
+cancer,Percentage with a Cancer Diagnosis,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
+diabetes,Percentage with Diabetes,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
+asthma,Percentage with Asthma,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
+hbp,Percentage with High Blood Pressure,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
+highchol,Percentage with High Cholesterol,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
+arthritis,Percentage with Arthritis,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
+obese,Percentage with Obesity,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
+depression,Percentage with Depression,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
+anxiety,Percentage with Anxiety,AWP 3.0 Survey,0,0,1,0,0,0,0,pct

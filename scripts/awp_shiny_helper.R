@@ -84,6 +84,12 @@ select_health <- unique(healthvariables$description)
 select_health_count<-select_health[grep("Percent",select_health,invert=TRUE)]
 select_health_pct<-select_health[grep("Percent",select_health)]
 
+###
+healthvariables_AWP <- subset(metadata, Health == 1) %>% filter(source=="AWP 3.0 Survey")
+select_health_AWP <- unique(healthvariables_AWP$description)
+select_health_pct_AWP<-select_health_AWP[grep("Percent",select_health_AWP)]
+###
+
 #housing variables
 housingvariables <-subset(metadata, Housing == 1)
 select_housing <- unique(housingvariables$description)
@@ -102,9 +108,12 @@ select_edu <- unique(eduvariables$description)
 select_edu_count<-select_edu[grep("Percent",select_edu,invert=TRUE)]
 select_edu_pct<-select_edu[grep("Percent",select_edu)]
 
+
 #transportation variables
 transvariables <- subset(metadata, Transportation == 1)
 select_trans <- unique(transvariables$description)
 select_trans_count<-select_trans[grep("Percent",select_trans,invert=TRUE)]
 select_trans_pct<-select_trans[grep("Percent",select_trans)]
+
+
 
