@@ -34,14 +34,14 @@ atlasdata <-  districts %>%
 
 atlasdata2<- bind_rows(atlasdata,awpdata_geo)
 
-# acs_es <- read_csv("data/GA_2020/ESzones_acs_interpolation.csv") %>%
-#   select(-SchoolID)
-# 
-# comm_es <- read_csv("data/community_data_es.csv") 
+acs_es <- read_csv("data/GA_2020/ESzones_acs_interpolation.csv") %>%
+  select(-SchoolID)
 
-# atlasdata2 <- rbind(acs_es, comm_es, awpdata) %>%
-#   mutate(moe = 0) %>%
-#   mutate(est = round(est, digits = 2))
+comm_es <- read_csv("data/community_data_es.csv")
+
+atlasdata3 <- rbind(acs_es, comm_es) %>%
+  mutate(moe = 0) %>%
+  mutate(est = round(est, digits = 2))
 
 
 ########################################
@@ -79,7 +79,7 @@ select_demo_count<-select_demo[grep("Percent",select_demo,invert=TRUE)]
 select_demo_pct<-select_demo[grep("Percent",select_demo)]
 
 #health variables
-healthvariables <-subset(metadata, Health == 1)
+healthvariables <-subset(metadata, Health == 1) %>% filter(source!="AWP 3.0 Survey")
 select_health <- unique(healthvariables$description)
 select_health_count<-select_health[grep("Percent",select_health,invert=TRUE)]
 select_health_pct<-select_health[grep("Percent",select_health)]

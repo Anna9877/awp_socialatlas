@@ -50,12 +50,18 @@ Column {.sidebar}
 #selected number of groups along with selecting variables within a particular domain. The selected variable will be 
 #mapped on a leaflet map along with being displayed in a bar chart and a data table.
 
-radioButtons("pct_count",HTML('Show the <b><i>population rate/percentage</b></i> or the raw <b><i>count of people</b></i>?'),
+
+##filter by source, add civic vitality domain, maybe change domains by source?, talk about year option
+radioButtons("source","Select Source of Data",c("Secondary data" = "secondary", 
+                                                "Athens Wellbeing Project" = "awp"),selected="secondary")
+
+ conditionalPanel(
+  condition="input.source !='awp'",
+  radioButtons("pct_count",HTML('Show the <b><i>population rate/percentage</b></i> or the raw <b><i>count of people</b></i>?'),
               c("Pop. rate/percentage" = "pct",
                 "Count of people" = "count"),
               selected = "pct")
-##filter by source, add civic vitality domain, maybe change domains by source?, talk about year option
-radioButtons("source","Select Source of Data",c("Census" = "z", "Athens Wellbeing Project" = "c"),selected="z")
+ )
 
 radioButtons("group","Choose your variable domain:",
               c("Demographics"="Demog",
@@ -74,13 +80,13 @@ radioButtons("group","Choose your variable domain:",
  )
 
  conditionalPanel(
-  condition="input.group =='Demog' && input.pct_count=='count'",
+  condition="input.group =='Demog' && input.pct_count=='count'&& input.source !='awp'",
    selectInput("variable2c","Select your variable:",
                 choices = select_demo_count)
  )
 
   conditionalPanel(
-  condition="input.group =='Demog' && input.pct_count=='pct'",
+  condition="input.group =='Demog' && input.pct_count=='pct'&& input.source !='awp'",
    selectInput("variable2p","Select your variable:",
                 choices = select_demo_pct)
  )
@@ -92,19 +98,16 @@ radioButtons("group","Choose your variable domain:",
  )
 
   conditionalPanel(
-  condition="input.group =='Health' && input.pct_count=='pct'",
+  condition="input.group =='Health' && input.pct_count=='pct'&& input.source !='awp'",
    selectInput("variable3p","Select your variable:",
                choices = select_health_pct)
  )
   
-########
- #    conditionalPanel(
- #  condition="input.group=='Health' && input.pct_count=='pct'&& input.source =='AWP 3.0 Survey",
- #   selectInput("variable65p","Select your variable:",
- #              choices = select_health_pct_AWP)
- # )
-
-######
+    conditionalPanel(
+  condition="input.group=='Health' && input.source =='awp'",
+   selectInput("variable65p","Select your variable:",
+              choices = select_health_pct_AWP)
+ )
   
  conditionalPanel(
   condition="input.group=='Housing' && input.pct_count=='count'",
@@ -172,7 +175,7 @@ radioButtons("group","Choose your variable domain:",
    } else if (input$group=="Health" & input$pct_count=="pct") {
      input$variable3p
      ####
-   } else if (input$group=="Health" & input$pct_count=="pct" & input$source =="AWP 3.0 Survey") {
+   } else if (input$group=="Health" & input$pct_count=="pct" & input$source =="awp") {
      input$variable65p
    #   ####
    } else if (input$group=="Housing" & input$pct_count=="count") {
@@ -220,7 +223,8 @@ Column
 
  text<-reactive({
    HTML(paste("<b>Variable shown: </b>",filter_metadata()$description,
-              "<br><b>Source: </b>",filter_metadata()$source ))
+              "<br><b>Source: </b>",filter_metadata()$source,
+              "<br>",variable()))
  })
 
 #This reactive variable will be used to filter the data.
@@ -346,14 +350,14 @@ Column {.tabset data-width=300}
     
 #filtering the variable's data based on the selected category and assigning it to a new variable
   if (input$chart_sort1 == "School"){
-      filteredvar<-atlasdata2 %>%
+      filteredvar<-atlasdata3 %>%
         filter(description==variable() & type==input$pct_count)
   } else if (input$chart_sort1 == "Variable_hl"){
-    filteredvar <- atlasdata2 %>%
+    filteredvar <- atlasdata3 %>%
       filter(description == variable() & type==input$pct_count)
     filteredvar <- filteredvar[order(-filteredvar$est),]
   } else if (input$chart_sort1 == "Variable_lh"){
-    filteredvar <- atlasdata2 %>%
+    filteredvar <- atlasdata3 %>%
       filter(description == variable() & type==input$pct_count)
     filteredvar <- filteredvar[order(filteredvar$est),]
   }
@@ -395,7 +399,7 @@ Values for this variable by school zone. Click on "Value" to sort.
 
 #That callback function allows the automatic row numbers to be renumbered to 1.
 DT::renderDataTable({
-  atlas_filter<-atlasdata2 %>%
+  atlas_filter<-atlasdata3 %>%
   filter(description==variable() & type==input$pct_count) %>%
   select(School,est) %>%
    rename("Value" = est)
@@ -410,7 +414,7 @@ DT::renderDataTable({
   })
 output$table<-renderDataTable(
     atlasdata2 %>%
-      filter(description == variable() & atlasdata2$type==input$pct_count) %>%
+      filter(description == variable() & atlasdata3$type==input$pct_count) %>%
       select(1,5),
   options=list(paging=FALSE,searching=FALSE)
 )
