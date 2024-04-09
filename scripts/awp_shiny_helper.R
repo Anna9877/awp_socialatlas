@@ -84,11 +84,11 @@ select_health <- unique(healthvariables$description)
 select_health_count<-select_health[grep("Percent",select_health,invert=TRUE)]
 select_health_pct<-select_health[grep("Percent",select_health)]
 
-###
+#AWP health variables
 healthvariables_AWP <- subset(metadata, Health == 1) %>% filter(source=="AWP 3.0 Survey")
 select_health_AWP <- unique(healthvariables_AWP$description)
 select_health_pct_AWP<-select_health_AWP[grep("Percent",select_health_AWP)]
-###
+
 
 #housing variables
 housingvariables <-subset(metadata, Housing == 1)
@@ -96,11 +96,21 @@ select_housing <- unique(housingvariables$description)
 select_housing_count<-select_housing[grep("Percent",select_housing,invert=TRUE)]
 select_housing_pct<-select_housing[grep("Percent",select_housing)]
 
+#AWP housing variables
+housingvariables_AWP <- subset(metadata, Housing == 1) %>% filter(source=="AWP 3.0 Survey")
+select_housing_AWP <- unique(housingvariables_AWP$description)
+select_housing_pct_AWP<-select_housing_AWP[grep("Percent",select_housing_AWP)]
+
 #income and employment variables
 incemployvariables <-subset(metadata, Income_employment == 1)
 select_incemploy <- unique(incemployvariables$description)
 select_incemploy_count<-select_incemploy[grep("Percent",select_incemploy,invert=TRUE)]
 select_incemploy_pct<-select_incemploy[grep("Percent",select_incemploy)]
+
+#AWP income and employment variables
+incemployvariables_AWP <- subset(metadata, Income_employment == 1) %>% filter(source=="AWP 3.0 Survey")
+select_incemploy_AWP <- unique(incemployvariables_AWP$description)
+select_incemploy_pct_AWP<-select_incemploy_AWP[grep("Percent",select_incemploy_AWP)]
 
 #education variables
 eduvariables <- subset(metadata, Education == 1)
@@ -108,6 +118,10 @@ select_edu <- unique(eduvariables$description)
 select_edu_count<-select_edu[grep("Percent",select_edu,invert=TRUE)]
 select_edu_pct<-select_edu[grep("Percent",select_edu)]
 
+#AWP education variables
+eduvariables_AWP <- subset(metadata, Education == 1) %>% filter(source=="AWP 3.0 Survey")
+select_edu_AWP <- unique(eduvariables_AWP$description)
+select_edu_pct_AWP<-select_edu_AWP[grep("Percent",select_edu_AWP)]
 
 #transportation variables
 transvariables <- subset(metadata, Transportation == 1)

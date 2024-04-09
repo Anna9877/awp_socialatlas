@@ -62,7 +62,8 @@ radioButtons("source","Select Source of Data",c("Secondary data" = "secondary",
                 "Count of people" = "count"),
               selected = "pct")
  )
-
+ # conditionalPanel(
+ #  condition="input.source !='awp'",
 radioButtons("group","Choose your variable domain:",
               c("Demographics"="Demog",
                 #"Community Safety"="Safety",
@@ -73,6 +74,16 @@ radioButtons("group","Choose your variable domain:",
                 "Transportation" = "Transport"),
               selected="Demog")
 
+#  conditionalPanel(
+#   condition="input.source =='awp'",
+# radioButtons("group","Choose your variable domain:",
+#               c("Community Safety"="Safety",
+#                 "Health"="Health",
+#                 "Housing"="Housing",
+#                 "Education" = "Learning",
+#                 "Civic Vitality" = "Civic Vitality"),
+#               selected="Health")
+# )
  conditionalPanel(
   condition="input.group =='Safety'",
    selectInput("variable1","Select your variable:",
@@ -105,48 +116,63 @@ radioButtons("group","Choose your variable domain:",
   
     conditionalPanel(
   condition="input.group=='Health' && input.source =='awp'",
-   selectInput("variable65p","Select your variable:",
+   selectInput("variable3awpp","Select your variable:",
               choices = select_health_pct_AWP)
  )
   
  conditionalPanel(
-  condition="input.group=='Housing' && input.pct_count=='count'",
+  condition="input.group=='Housing' && input.pct_count=='count' && input.source !='awp'",
    selectInput("variable4c","Select your variable:",
                choices = select_housing_count)
  )
 
   conditionalPanel(
-  condition="input.group=='Housing' && input.pct_count=='pct'",
+  condition="input.group=='Housing' && input.pct_count=='pct'&& input.source !='awp'",
    selectInput("variable4p","Select your variable:",
                choices = select_housing_pct)
  )
 
-
+    conditionalPanel(
+  condition="input.group=='Housing' && input.source =='awp'",
+   selectInput("variable4awpp","Select your variable:",
+              choices = select_housing_pct_AWP)
+ )
  conditionalPanel(
-  condition="input.group =='Income' && input.pct_count=='count'",
+  condition="input.group =='Income' && input.pct_count=='count'&& input.source !='awp'",
    selectInput("variable5c","Select your variable:",
                choices = select_incemploy_count)
 
  )
 
   conditionalPanel(
-  condition="input.group =='Income' && input.pct_count=='pct'",
+  condition="input.group =='Income' && input.pct_count=='pct'&& input.source !='awp'",
    selectInput("variable5p","Select your variable:",
                choices = select_incemploy_pct)
 
  )
+      conditionalPanel(
+  condition="input.group=='Income' && input.source =='awp' ",
+   selectInput("variable5awpp","Select your variable:",
+              choices = select_incemploy_pct_AWP)
+ )
 
  conditionalPanel(
-  condition="input.group=='Learning' && input.pct_count=='count'",
+  condition="input.group=='Learning' && input.pct_count=='count' && input.source !='awp'",
    selectInput("variable6c","Select your variable:",
               choices = select_edu_count)
  )
 
   conditionalPanel(
-  condition="input.group=='Learning' && input.pct_count=='pct'",
+  condition="input.group=='Learning' && input.pct_count=='pct'&& input.source !='awp'",
    selectInput("variable6p","Select your variable:",
               choices = select_edu_pct)
  )
+    conditionalPanel(
+  condition="input.group=='Learning' && input.source =='awp' ",
+   selectInput("variable6awpp","Select your variable:",
+              choices = select_edu_pct_AWP)
+ )
+  
 
 
  conditionalPanel(
@@ -170,27 +196,30 @@ radioButtons("group","Choose your variable domain:",
      input$variable2c
    } else if (input$group=="Demog" & input$pct_count=="pct") {
      input$variable2p
-   } else if (input$group=="Health" & input$pct_count=="count" 
-              & input$source !="awp") {
+   } else if (input$group=="Health" & input$pct_count=="count" & input$source !="awp") {
      input$variable3c
-   } else if (input$group=="Health" & input$pct_count=="pct" 
-              & input$source !="awp") {
+   } else if (input$group=="Health" & input$pct_count=="pct" & input$source !="awp") {
      input$variable3p
-     ####
    } else if (input$group=="Health" & input$source =="awp") {
-     input$variable65p
-   } else if (input$group=="Housing" & input$pct_count=="count") {
+     input$variable3awpp
+   } else if (input$group=="Housing" & input$pct_count=="count"& input$source !="awp") {
      input$variable4c
-   } else if (input$group=="Housing" & input$pct_count=="pct") {
+   } else if (input$group=="Housing" & input$pct_count=="pct"& input$source !="awp") {
      input$variable4p
-   } else if (input$group=="Income" & input$pct_count=="count") {
+   } else if (input$group=="Housing" & input$source =="awp") {
+     input$variable4awpp
+   } else if (input$group=="Income" & input$pct_count=="count"& input$source !="awp") {
      input$variable5c
-   } else if (input$group=="Income" & input$pct_count=="pct") {
+   } else if (input$group=="Income" & input$pct_count=="pct"& input$source !="awp") {
      input$variable5p
-   } else if (input$group=="Learning" & input$pct_count=="count") {
+   } else if (input$group=="Income" & input$source =="awp") {
+     input$variable5awpp
+   } else if (input$group=="Learning" & input$pct_count=="count"& input$source !="awp") {
      input$variable6c
-   } else if (input$group=="Learning" & input$pct_count=="pct") {
+   } else if (input$group=="Learning" & input$pct_count=="pct"& input$source !="awp") {
      input$variable6p
+   } else if (input$group=="Learning" & input$source =="awp") {
+     input$variable6awpp
    } else if (input$group=="Transport" & input$pct_count=="count") {
      input$variable7c
    } else if (input$group=="Transport" & input$pct_count=="pct") {

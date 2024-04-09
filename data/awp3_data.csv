@@ -713,3 +713,105 @@ SchoolID,School,var,est,type,description
 15,Whitehead Rd.,anxiety,43.54305884,pct,Percentage with Anxiety
 16,Winterville,anxiety,37.24506297,pct,Percentage with Anxiety
 0,Unclassified,anxiety,30.21304542,pct,Percentage with Anxiety
+1,Alps Road,heartdis,9.950234158,pct,Percentage with Heart Disease
+2,Barnett Shoals,heartdis,1.533668557,pct,Percentage with Heart Disease
+3,Barrow,heartdis,3.732966685,pct,Percentage with Heart Disease
+4,Choice Zone-West,heartdis,3.577108792,pct,Percentage with Heart Disease
+5,Chase Street,heartdis,4.002922138,pct,Percentage with Heart Disease
+6,Cleveland Road,heartdis,2.632791325,pct,Percentage with Heart Disease
+7,Fowler Drive,heartdis,0.6605811,pct,Percentage with Heart Disease
+8,Gaines,heartdis,5.070553667,pct,Percentage with Heart Disease
+9,Howard B Stroud,heartdis,6.283870942,pct,Percentage with Heart Disease
+10,Judia Jackson Harris,heartdis,3.914391769,pct,Percentage with Heart Disease
+11,Choice Zone-East,heartdis,6.541251523,pct,Percentage with Heart Disease
+12,Oglethorpe,heartdis,3.90722169,pct,Percentage with Heart Disease
+13,Timothy Rd.,heartdis,8.920592941,pct,Percentage with Heart Disease
+14,Whit Davis,heartdis,12.44529558,pct,Percentage with Heart Disease
+15,Whitehead Rd.,heartdis,1.810917167,pct,Percentage with Heart Disease
+16,Winterville,heartdis,6.885391624,pct,Percentage with Heart Disease
+0,Unclassified,heartdis,8.43362208,pct,Percentage with Heart Disease
+1,Alps Road,mentaldis,8.884822234,pct,Percentage with a Mental Disorder
+2,Barnett Shoals,mentaldis,10.29998035,pct,Percentage with a Mental Disorder
+3,Barrow,mentaldis,8.684999982,pct,Percentage with a Mental Disorder
+4,Choice Zone-West,mentaldis,4.445982375,pct,Percentage with a Mental Disorder
+5,Chase Street,mentaldis,11.33316411,pct,Percentage with a Mental Disorder
+6,Cleveland Road,mentaldis,10.09964944,pct,Percentage with a Mental Disorder
+7,Fowler Drive,mentaldis,5.585126439,pct,Percentage with a Mental Disorder
+8,Gaines,mentaldis,8.747425738,pct,Percentage with a Mental Disorder
+9,Howard B Stroud,mentaldis,9.444564967,pct,Percentage with a Mental Disorder
+10,Judia Jackson Harris,mentaldis,6.736457831,pct,Percentage with a Mental Disorder
+11,Choice Zone-East,mentaldis,10.88435437,pct,Percentage with a Mental Disorder
+12,Oglethorpe,mentaldis,12.09697264,pct,Percentage with a Mental Disorder
+13,Timothy Rd.,mentaldis,6.834368728,pct,Percentage with a Mental Disorder
+14,Whit Davis,mentaldis,12.01012806,pct,Percentage with a Mental Disorder
+15,Whitehead Rd.,mentaldis,3.721256137,pct,Percentage with a Mental Disorder
+16,Winterville,mentaldis,11.45850362,pct,Percentage with a Mental Disorder
+0,Unclassified,mentaldis,15.52164324,pct,Percentage with a Mental Disorder
+1,Alps Road,chronpain,15.52948275,pct,Percentage with Chronic Pain
+2,Barnett Shoals,chronpain,12.51150607,pct,Percentage with Chronic Pain
+3,Barrow,chronpain,6.278012871,pct,Percentage with Chronic Pain
+4,Choice Zone-West,chronpain,6.362924476,pct,Percentage with Chronic Pain
+5,Chase Street,chronpain,9.814395524,pct,Percentage with Chronic Pain
+6,Cleveland Road,chronpain,11.75965976,pct,Percentage with Chronic Pain
+7,Fowler Drive,chronpain,10.93605588,pct,Percentage with Chronic Pain
+8,Gaines,chronpain,18.19096698,pct,Percentage with Chronic Pain
+9,Howard B Stroud,chronpain,13.63386137,pct,Percentage with Chronic Pain
+10,Judia Jackson Harris,chronpain,8.508512774,pct,Percentage with Chronic Pain
+11,Choice Zone-East,chronpain,14.47738009,pct,Percentage with Chronic Pain
+12,Oglethorpe,chronpain,9.935392439,pct,Percentage with Chronic Pain
+13,Timothy Rd.,chronpain,19.60814053,pct,Percentage with Chronic Pain
+14,Whit Davis,chronpain,18.4386626,pct,Percentage with Chronic Pain
+15,Whitehead Rd.,chronpain,12.15644179,pct,Percentage with Chronic Pain
+16,Winterville,chronpain,13.25970096,pct,Percentage with Chronic Pain
+0,Unclassified,chronpain,12.2228318,pct,Percentage with Chronic Pain
+1,Alps Road,opioid,2.800879168,pct,Percentage with Opioid Use Disorder
+2,Barnett Shoals,opioid,0.103715083,pct,Percentage with Opioid Use Disorder
+3,Barrow,opioid,0.54255043,pct,Percentage with Opioid Use Disorder
+4,Choice Zone-West,opioid,0.324582253,pct,Percentage with Opioid Use Disorder
+5,Chase Street,opioid,1.260360138,pct,Percentage with Opioid Use Disorder
+6,Cleveland Road,opioid,3.217418908,pct,Percentage with Opioid Use Disorder
+7,Fowler Drive,opioid,0,pct,Percentage with Opioid Use Disorder
+8,Gaines,opioid,0.23324304,pct,Percentage with Opioid Use Disorder
+9,Howard B Stroud,opioid,0.899141919,pct,Percentage with Opioid Use Disorder
+10,Judia Jackson Harris,opioid,0.782878354,pct,Percentage with Opioid Use Disorder
+11,Choice Zone-East,opioid,2.889643691,pct,Percentage with Opioid Use Disorder
+12,Oglethorpe,opioid,0.513531934,pct,Percentage with Opioid Use Disorder
+13,Timothy Rd.,opioid,1.789328843,pct,Percentage with Opioid Use Disorder
+14,Whit Davis,opioid,0.146793925,pct,Percentage with Opioid Use Disorder
+15,Whitehead Rd.,opioid,0,pct,Percentage with Opioid Use Disorder
+16,Winterville,opioid,8.477197231,pct,Percentage with Opioid Use Disorder
+0,Unclassified,opioid,0.354797652,pct,Percentage with Opioid Use Disorder
+1,Alps Road,otherdrugdis,2.800879168,pct,Percentage with Other Drug Use Disorder
+2,Barnett Shoals,otherdrugdis,0.103715083,pct,Percentage with Other Drug Use Disorder
+3,Barrow,otherdrugdis,0.301203176,pct,Percentage with Other Drug Use Disorder
+4,Choice Zone-West,otherdrugdis,0.324582253,pct,Percentage with Other Drug Use Disorder
+5,Chase Street,otherdrugdis,2.535769512,pct,Percentage with Other Drug Use Disorder
+6,Cleveland Road,otherdrugdis,2.921249498,pct,Percentage with Other Drug Use Disorder
+7,Fowler Drive,otherdrugdis,0.33029055,pct,Percentage with Other Drug Use Disorder
+8,Gaines,otherdrugdis,0.029728754,pct,Percentage with Other Drug Use Disorder
+9,Howard B Stroud,otherdrugdis,0.713915474,pct,Percentage with Other Drug Use Disorder
+10,Judia Jackson Harris,otherdrugdis,0,pct,Percentage with Other Drug Use Disorder
+11,Choice Zone-East,otherdrugdis,3.069625423,pct,Percentage with Other Drug Use Disorder
+12,Oglethorpe,otherdrugdis,2.95829803,pct,Percentage with Other Drug Use Disorder
+13,Timothy Rd.,otherdrugdis,1.213681033,pct,Percentage with Other Drug Use Disorder
+14,Whit Davis,otherdrugdis,0.146793925,pct,Percentage with Other Drug Use Disorder
+15,Whitehead Rd.,otherdrugdis,0,pct,Percentage with Other Drug Use Disorder
+16,Winterville,otherdrugdis,2.691583011,pct,Percentage with Other Drug Use Disorder
+0,Unclassified,otherdrugdis,0.896643241,pct,Percentage with Other Drug Use Disorder
+1,Alps Road,summerprogram,30.616183,pct,Percentage of Households with Children that Participated in a Summer Program last summer
+2,Barnett Shoals,,41.789201,pct,Percentage of Households with Children that Participated in a Summer Program last summer
+3,Barrow,,50.9278,pct,Percentage of Households with Children that Participated in a Summer Program last summer
+4,Choice Zone-West,,28.967419,pct,Percentage of Households with Children that Participated in a Summer Program last summer
+5,Chase Street,,66.044204,pct,Percentage of Households with Children that Participated in a Summer Program last summer
+6,Cleveland Road,,20.316855,pct,Percentage of Households with Children that Participated in a Summer Program last summer
+7,Fowler Drive,,9.24329,pct,Percentage of Households with Children that Participated in a Summer Program last summer
+8,Gaines,,11.430253,pct,Percentage of Households with Children that Participated in a Summer Program last summer
+9,Howard B Stroud,,17.8555,pct,Percentage of Households with Children that Participated in a Summer Program last summer
+10,Judia Jackson Harris,,46.30041,pct,Percentage of Households with Children that Participated in a Summer Program last summer
+11,Choice Zone-East,,26.801571,pct,Percentage of Households with Children that Participated in a Summer Program last summer
+12,Oglethorpe,,39.042113,pct,Percentage of Households with Children that Participated in a Summer Program last summer
+13,Timothy Rd.,,62.192599,pct,Percentage of Households with Children that Participated in a Summer Program last summer
+14,Whit Davis,,58.650822,pct,Percentage of Households with Children that Participated in a Summer Program last summer
+15,Whitehead Rd.,,51.764503,pct,Percentage of Households with Children that Participated in a Summer Program last summer
+16,Winterville,,36.077741,pct,Percentage of Households with Children that Participated in a Summer Program last summer
+0,Unclassified,,36.077741,pct,Percentage of Households with Children that Participated in a Summer Program last summer
