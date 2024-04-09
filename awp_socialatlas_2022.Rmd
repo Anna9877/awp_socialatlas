@@ -62,8 +62,8 @@ radioButtons("source","Select Source of Data",c("Secondary data" = "secondary",
                 "Count of people" = "count"),
               selected = "pct")
  )
- # conditionalPanel(
- #  condition="input.source !='awp'",
+ conditionalPanel(
+  condition="input.source !='awp'",
 radioButtons("group","Choose your variable domain:",
               c("Demographics"="Demog",
                 #"Community Safety"="Safety",
@@ -73,23 +73,25 @@ radioButtons("group","Choose your variable domain:",
                 "Lifelong Learning" = "Learning",
                 "Transportation" = "Transport"),
               selected="Demog")
+)
 
-#  conditionalPanel(
-#   condition="input.source =='awp'",
-# radioButtons("group","Choose your variable domain:",
-#               c("Community Safety"="Safety",
-#                 "Health"="Health",
-#                 "Housing"="Housing",
-#                 "Education" = "Learning",
-#                 "Civic Vitality" = "Civic Vitality"),
-#               selected="Health")
-# )
+ conditionalPanel(
+  condition="input.source =='awp'",
+radioButtons("group1","Choose your variable domain:",
+              c("Community Safety"="Safety",
+                "Health"="Health",
+                "Housing"="Housing",
+                "Education" = "Learning",
+                "Civic Vitality" = "Civic Vitality"),
+              selected="Health")
+)
  conditionalPanel(
   condition="input.group =='Safety'",
    selectInput("variable1","Select your variable:",
                choices = select_safety)
  )
 
+ 
  conditionalPanel(
   condition="input.group =='Demog' && input.pct_count=='count'&& input.source !='awp'",
    selectInput("variable2c","Select your variable:",
@@ -115,7 +117,7 @@ radioButtons("group","Choose your variable domain:",
  )
   
     conditionalPanel(
-  condition="input.group=='Health' && input.source =='awp'",
+  condition="input.group1=='Health' && input.source =='awp'",
    selectInput("variable3awpp","Select your variable:",
               choices = select_health_pct_AWP)
  )
@@ -133,7 +135,7 @@ radioButtons("group","Choose your variable domain:",
  )
 
     conditionalPanel(
-  condition="input.group=='Housing' && input.source =='awp'",
+  condition="input.group1=='Housing' && input.source =='awp'",
    selectInput("variable4awpp","Select your variable:",
               choices = select_housing_pct_AWP)
  )
@@ -192,15 +194,15 @@ radioButtons("group","Choose your variable domain:",
  variable<-reactive({
      if(input$group=="Safety"){
      input$variable1
-   } else if (input$group=="Demog" & input$pct_count=="count") {
+   } else if (input$group=="Demog" & input$pct_count=="count"& input$source !="awp") {
      input$variable2c
-   } else if (input$group=="Demog" & input$pct_count=="pct") {
+   } else if (input$group=="Demog" & input$pct_count=="pct"& input$source !="awp") {
      input$variable2p
    } else if (input$group=="Health" & input$pct_count=="count" & input$source !="awp") {
      input$variable3c
    } else if (input$group=="Health" & input$pct_count=="pct" & input$source !="awp") {
      input$variable3p
-   } else if (input$group=="Health" & input$source =="awp") {
+   } else if (input$group1=="Health" & input$source =="awp") {
      input$variable3awpp
    } else if (input$group=="Housing" & input$pct_count=="count"& input$source !="awp") {
      input$variable4c
@@ -288,12 +290,12 @@ filteredData_variable <- reactive({
 output$map<-renderLeaflet({
   nclassint<- as.numeric(input$ngroups)
   pal <- if(input$rpal == "b"){
-    pal <- colorBin("Reds",filteredData_variable()$est, bins = nclassint, pretty = FALSE)
+    pal <- colorBin("Blues",filteredData_variable()$est, bins = nclassint, pretty = FALSE)
   } else if (input$rpal == "q") {
-    pal <- colorQuantile("Reds", filteredData_variable()$est, n = nclassint)
+    pal <- colorQuantile("Blues", filteredData_variable()$est, n = nclassint)
   }
-  pal <- colorBin("Reds",filteredData_variable()$est, bins = nclassint)
-  pal <- colorQuantile("Reds", filteredData_variable()$est, n = nclassint)
+  pal <- colorBin("Blues",filteredData_variable()$est, bins = nclassint)
+  pal <- colorQuantile("Blues", filteredData_variable()$est, n = nclassint)
   factpal <- brewer.pal(8,"Dark2")
   factpal2 <- colorRampPalette(factpal)(16)
   es_pal <- colorFactor(factpal2, unique(es_zones$School))
@@ -460,3 +462,13 @@ dataTableOutput('table')
 # textOutput("vardesc")
 ```
 
+About this tool
+===================================== 
+
+General overview of the tool:
+
+* **U.S. Census American Community Survey**: About this data source
+* **Athens Open Data**: About this data source
+* **Athens Wellbeing Project**: About this data source
+
+Questions about the social atlas can be sent to Dr. Grace Bagwell-Adams () or Dr. Jerry Shannon (jshannon@uga.edu), both at the University of Georgia.

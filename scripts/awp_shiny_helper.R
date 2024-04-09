@@ -39,7 +39,7 @@ acs_es <- read_csv("data/GA_2020/ESzones_acs_interpolation.csv") %>%
 
 comm_es <- read_csv("data/community_data_es.csv")
 
-atlasdata3 <- rbind(acs_es, comm_es) %>%
+atlasdata3 <- bind_rows(acs_es, comm_es,awpdata) %>%
   mutate(moe = 0) %>%
   mutate(est = round(est, digits = 2))
 
