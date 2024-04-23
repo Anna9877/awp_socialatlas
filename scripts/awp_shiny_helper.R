@@ -39,7 +39,7 @@ acs_es <- read_csv("data/GA_2020/ESzones_acs_interpolation.csv") %>%
 
 comm_es <- read_csv("data/community_data_es.csv")
 
-atlasdata3 <- bind_rows(acs_es, comm_es,awpdata) %>%
+atlasdata3 <- bind_rows(acs_es, comm_es, awpdata) %>%
   mutate(moe = 0) %>%
   mutate(est = round(est, digits = 2))
 
@@ -72,11 +72,22 @@ metadata <- bind_rows(metadata2,metadata1, awpmeta) %>%
 safetyvariables <-subset(metadata, Community_safety == 1)
 select_safety <- sort(unique(safetyvariables$description))
 
+#AWP safety variables
+safetyvariables_AWP <- subset(metadata, Community_safety == 1) %>% filter(source=="AWP 3.0 Survey")
+select_safety_AWP <- unique(safetyvariables_AWP$description)
+select_safety_pct_AWP<-select_safety_AWP[grep("Percent",select_safety_AWP)]
+
+
 #demographic variables
 demovariables <- subset(metadata, Demographics == 1)
 select_demo <- unique(demovariables$description)
 select_demo_count<-select_demo[grep("Percent",select_demo,invert=TRUE)]
 select_demo_pct<-select_demo[grep("Percent",select_demo)]
+
+##AWP Civic vitality variables
+civicvariables_AWP <- subset(metadata, Demographics == 1) %>% filter(source=="AWP 3.0 Survey")
+select_civic_AWP <- unique(civicvariables_AWP$description)
+select_civic_pct_AWP <- select_civic_AWP[grep("Percent", select_civic_AWP)]
 
 #health variables
 healthvariables <-subset(metadata, Health == 1) %>% filter(source!="AWP 3.0 Survey")

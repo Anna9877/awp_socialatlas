@@ -1,37 +1,57 @@
-variable,description,source,Community_safety,Demographics,Health,Housing,Income_employment,Education,Transportation,type
-healthcover,Percentage without health coverage,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
-welfarebens,Percentage receiving welfare benefits,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
-snap,Percentage receiving SNAP,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
-loan,Percentage who took out a high interest loan in the last 90 days.,AWP 3.0 Survey,0,0,0,0,1,0,0,pct
-evictthreat,Percentage that were threatened with eviction in the last 90 days,AWP 3.0 Survey,0,0,0,0,1,0,0,pct
-employloss,Percentage that lost a job in the last 12 months,AWP 3.0 Survey,0,0,0,0,1,0,0,pct
-internet_none,Percentage without Internet Access at home,AWP 3.0 Survey,0,0,0,1,0,0,0,pct
-ssdi,Percentage on SSDI,AWP 3.0 Survey,0,0,0,0,1,0,0,pct
-ssi,Percentage on SSI,AWP 3.0 Survey,0,0,0,0,1,0,0,pct
-tanf,Percentage receiving TANF,AWP 3.0 Survey,0,0,0,0,1,0,0,pct
-wic,Percentage receiving WIC,AWP 3.0 Survey,0,0,0,0,1,0,0,pct
-caps,Percentage receiving CAPS,AWP 3.0 Survey,0,0,0,0,1,0,0,pct
-utilitybills,Percentage that had difficulty paying utility bills in the last 90 days,AWP 3.0 Survey,0,0,0,0,1,0,0,pct
-creditbills,Percentage that had difficulty paying credit card bills,AWP 3.0 Survey,0,0,0,0,1,0,0,pct
-medicalbills,Percentage that had difficulty paying medical bills in the last 90 days,AWP 3.0 Survey,0,0,0,0,1,0,0,pct
-register_vote,Percentage registered to vote,AWP 3.0 Survey,0,1,0,0,0,0,0,pct
-corr_year,Percentage that Corresponded with Politician,AWP 3.0 Survey,0,1,0,0,0,0,0,pct
-petition_year,Percentage that Signed a Petition,AWP 3.0 Survey,0,1,0,0,0,0,0,pct
-protest_year,Percentage that Participated in a Protest,AWP 3.0 Survey,0,1,0,0,0,0,0,pct
-meeting_year,Percentage that Attended a Community Meeting,AWP 3.0 Survey,0,1,0,0,0,0,0,pct
-vote_year,Percentage who Voted in the Last Year,AWP 3.0 Survey,0,1,0,0,0,0,0,pct
-cancer,Percentage with a Cancer Diagnosis,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
-diabetes,Percentage with Diabetes,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
-asthma,Percentage with Asthma,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
-hbp,Percentage with High Blood Pressure,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
-highchol,Percentage with High Cholesterol,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
-arthritis,Percentage with Arthritis,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
-obese,Percentage with Obesity,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
-depression,Percentage with Depression,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
-anxiety,Percentage with Anxiety,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
-heartdis,Percentage with Heart Disease,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
-mentaldis,Percentage with a Mental Disorder,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
-chronpain,Percentage with Chronic Pain,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
-opioid,Percentage with Opioid Use Disorder,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
-otherdrugdis,Percentage with Other Drug Use Disorder,AWP 3.0 Survey,0,0,1,0,0,0,0,pct
-summerprogram,Percentage of Households with Children that Participated in a Summer Program last summer,AWP 3.0 Survey,0,0,0,0,0,1,0,pct
+variable,description,source,Community_safety,Demographics,Health,Housing,Income_employment,Education,Transportation,Civic Vitality,type
+healthcover,Percentage without health coverage,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+welfarebens,Percentage receiving welfare benefits,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+snap,Percentage receiving SNAP,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+loan,Percentage who took out a high interest loan in the last 90 days,AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
+evictthreat,Percentage that were threatened with eviction in the last 90 days,AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
+employloss,Percentage that lost a job in the last 12 months,AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
+internet_none,Percentage without Internet Access at home,AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
+ssdi,Percentage on SSDI,AWP 3.0 Survey,0,0,1,1,0,0,0,0,pct
+ssi,Percentage on SSI,AWP 3.0 Survey,0,0,1,1,0,0,0,0,pct
+tanf,Percentage receiving TANF,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+wic,Percentage receiving WIC,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+caps,Percentage receiving CAPS,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+utilitybills,Percentage that had difficulty paying utility bills in the last 90 days,AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
+creditbills,Percentage that had difficulty paying credit card bills,AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
+medicalbills,Percentage that had difficulty paying medical bills in the last 90 days,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+register_vote,Percentage registered to vote,AWP 3.0 Survey,0,0,0,0,0,0,0,1,pct
+corr_year,Percentage that Corresponded with Politician,AWP 3.0 Survey,0,0,0,0,0,0,0,1,pct
+petition_year,Percentage that Signed a Petition,AWP 3.0 Survey,0,0,0,0,0,0,0,1,pct
+protest_year,Percentage that Participated in a Protest,AWP 3.0 Survey,0,0,0,0,0,0,0,1,pct
+meeting_year,Percentage that Attended a Community Meeting,AWP 3.0 Survey,0,0,0,0,0,0,0,1,pct
+vote_year,Percentage who Voted in the Last Year,AWP 3.0 Survey,0,0,0,0,0,0,0,1,pct
+cancer,Percentage with a Cancer Diagnosis,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+diabetes,Percentage with Diabetes,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+asthma,Percentage with Asthma,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+hbp,Percentage with High Blood Pressure,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+highchol,Percentage with High Cholesterol,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+arthritis,Percentage with Arthritis,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+obese,Percentage with Obesity,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+depression,Percentage with Depression,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+anxiety,Percentage with Anxiety,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+heartdis,Percentage with Heart Disease,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+mentaldis,Percentage with a Mental Disorder,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+chronpain,Percentage with Chronic Pain,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+opioid,Percentage with Opioid Use Disorder,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+otherdrugdis,Percentage with Other Drug Use Disorder,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+summerprogram,Percentage of Households with Children that Participated in a Summer Program last summer,AWP 3.0 Survey,0,0,0,0,0,1,0,0,pct
+religion,Percentage who consider religion to be an important part of their life,AWP 3.0 Survey,0,0,0,0,0,0,0,1,pct
+mentalaccess,Percentage that needed mental health care and were not able to get it,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+dentalaccess,Percentage that needed dental care and did not get it,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+sudaccess,Percentage that needed substance abuse care and did not get it,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+smoke,Percentage of households that use tobacco products,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+hunger,Percentage that did not have access to food some time in the last 12 months,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+death,Percentage that experience the death of a family or close friend in 2020 or 2021,AWP 3.0 Survey,0,0,0,0,0,0,0,1,pct
+coviddeath,Percentage that experience the death of a family or close friend in 2020 or 2021 due to COVID-19,AWP 3.0 Survey,0,0,0,0,0,0,0,1,pct
+prescription_use,Percentage that has ever used a prescription drug in a way not directed by a doctor,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+homeprob_walls,Percentage living in a home with outside walls that lean or slant,AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
+homeprob_windows,Percentage living in a home with broken or boarded windows,AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
+homeprob_wire,Percentage living in a home with exposed wiring,AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
+homeprob_roof,Percentage living in a home missing shingles or roofing materials,AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
+homeprob_pests,Percentage living in a home with pests such as rats or cockroaches,AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
+homeprob_none,Percentage living in a home with none of the above listed housing problems,AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
+homeprob_any,Percentage living in a home with any of the listed housing problems,AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
+homeprob_mold,Percentage living in a home with mold,AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
+homeprob_health,Percentage living in a home with health hazards such as radon or lead,AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
+homeprob_cracks,"Percentage living in a home with open cracks or holes in the floors, wall, or ceilings",AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
+homeprob_paint,,,,,,,,,,,

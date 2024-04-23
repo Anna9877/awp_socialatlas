@@ -86,9 +86,9 @@ radioButtons("group1","Choose your variable domain:",
               selected="Health")
 )
  conditionalPanel(
-  condition="input.group =='Safety'",
-   selectInput("variable1","Select your variable:",
-               choices = select_safety)
+  condition="input.group =='Safety'&& input.source == 'awp'",
+   selectInput("variable1awpp","Select your variable:",
+               choices = select_safety_pct_AWP)
  )
 
  
@@ -103,6 +103,12 @@ radioButtons("group1","Choose your variable domain:",
    selectInput("variable2p","Select your variable:",
                 choices = select_demo_pct)
  )
+    conditionalPanel(
+  condition="input.group1 =='Civic Vitality' && input.source =='awp'",
+   selectInput("variable8awpp","Select your variable:",
+                choices = select_civic_pct_AWP)
+ )
+
 
  conditionalPanel(
   condition="input.group =='Health' && input.pct_count=='count'",
@@ -153,7 +159,7 @@ radioButtons("group1","Choose your variable domain:",
 
  )
       conditionalPanel(
-  condition="input.group=='Income' && input.source =='awp' ",
+  condition="input.group1=='Income' && input.source =='awp' ",
    selectInput("variable5awpp","Select your variable:",
               choices = select_incemploy_pct_AWP)
  )
@@ -170,7 +176,7 @@ radioButtons("group1","Choose your variable domain:",
               choices = select_edu_pct)
  )
     conditionalPanel(
-  condition="input.group=='Learning' && input.source =='awp' ",
+  condition="input.group1=='Learning' && input.source =='awp' ",
    selectInput("variable6awpp","Select your variable:",
               choices = select_edu_pct_AWP)
  )
@@ -192,8 +198,8 @@ radioButtons("group1","Choose your variable domain:",
 #Use the variable object to select the variable people choose. When the domain is chosen, the appropriate variables will
 #be loaded. 
  variable<-reactive({
-     if(input$group=="Safety"){
-     input$variable1
+     if(input$group1=="Safety" & input$source=="awp"){
+     input$variable1awpp
    } else if (input$group=="Demog" & input$pct_count=="count"& input$source !="awp") {
      input$variable2c
    } else if (input$group=="Demog" & input$pct_count=="pct"& input$source !="awp") {
@@ -208,25 +214,27 @@ radioButtons("group1","Choose your variable domain:",
      input$variable4c
    } else if (input$group=="Housing" & input$pct_count=="pct"& input$source !="awp") {
      input$variable4p
-   } else if (input$group=="Housing" & input$source =="awp") {
+   } else if (input$group1=="Housing" & input$source =="awp") {
      input$variable4awpp
    } else if (input$group=="Income" & input$pct_count=="count"& input$source !="awp") {
      input$variable5c
    } else if (input$group=="Income" & input$pct_count=="pct"& input$source !="awp") {
      input$variable5p
-   } else if (input$group=="Income" & input$source =="awp") {
+   } else if (input$group1=="Income" & input$source =="awp") {
      input$variable5awpp
    } else if (input$group=="Learning" & input$pct_count=="count"& input$source !="awp") {
      input$variable6c
    } else if (input$group=="Learning" & input$pct_count=="pct"& input$source !="awp") {
      input$variable6p
-   } else if (input$group=="Learning" & input$source =="awp") {
+   } else if (input$group1=="Learning" & input$source =="awp") {
      input$variable6awpp
    } else if (input$group=="Transport" & input$pct_count=="count") {
      input$variable7c
    } else if (input$group=="Transport" & input$pct_count=="pct") {
      input$variable7p
-     }
+   } else if (input$group1=="Civic Vitality" & input$pct_count=="pct"& input$source =="awp") {
+     input$variable8awpp
+   }
    })
 
 radioButtons("rpal", "Select method of grouping the variable", c("Bins" = "b", "Quantiles" = "q"), selected = "b")
@@ -289,13 +297,19 @@ filteredData_variable <- reactive({
 ##Add the map
 output$map<-renderLeaflet({
   nclassint<- as.numeric(input$ngroups)
-  pal <- if(input$rpal == "b"){
+  pal <- if(input$rpal == "b" && input$source == "awp"){
     pal <- colorBin("Blues",filteredData_variable()$est, bins = nclassint, pretty = FALSE)
-  } else if (input$rpal == "q") {
+  } else if (input$rpal == "q" && input$source =="awp") {
     pal <- colorQuantile("Blues", filteredData_variable()$est, n = nclassint)
   }
-  pal <- colorBin("Blues",filteredData_variable()$est, bins = nclassint)
-  pal <- colorQuantile("Blues", filteredData_variable()$est, n = nclassint)
+   else if (input$rpal == "b" && input$source !="awp") {
+    pal <- colorBin("Reds", filteredData_variable()$est, bins = nclassint, pretty=FALSE)
+  
+  } else if (input$rpal == "q"&& input$source != "awp") {
+    pal <- colorQuantile("Reds", filteredData_variable()$est, n = nclassint)
+  }
+  #pal <- colorBin("Blues",filteredData_variable()$est, bins = nclassint)
+  #pal <- colorQuantile("Blues", filteredData_variable()$est, n = nclassint)
   factpal <- brewer.pal(8,"Dark2")
   factpal2 <- colorRampPalette(factpal)(16)
   es_pal <- colorFactor(factpal2, unique(es_zones$School))
