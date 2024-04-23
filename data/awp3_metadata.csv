@@ -1,4 +1,4 @@
-variable,description,source,Community_safety,Demographics,Health,Housing,Income_employment,Education,Transportation,Civic Vitality,type
+variable,description,source,Community_safety,Demographics,Health,Housing,Income_employment,Education,Transportation,Civic,type
 healthcover,Percentage without health coverage,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
 welfarebens,Percentage receiving welfare benefits,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
 snap,Percentage receiving SNAP,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct

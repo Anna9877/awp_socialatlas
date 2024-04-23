@@ -82,7 +82,7 @@ radioButtons("group1","Choose your variable domain:",
                 "Health"="Health",
                 "Housing"="Housing",
                 "Education" = "Learning",
-                "Civic Vitality" = "Civic Vitality"),
+                "Civic Vitality" = "Civic"),
               selected="Health")
 )
  conditionalPanel(
@@ -232,7 +232,7 @@ radioButtons("group1","Choose your variable domain:",
      input$variable7c
    } else if (input$group=="Transport" & input$pct_count=="pct") {
      input$variable7p
-   } else if (input$group1=="Civic Vitality" & input$pct_count=="pct"& input$source =="awp") {
+   } else if (input$group1=="Civic Vitality" & input$source =="awp") {
      input$variable8awpp
    }
    })
@@ -485,4 +485,4 @@ General overview of the tool:
 * **Athens Open Data**: About this data source
 * **Athens Wellbeing Project**: About this data source
 
-Questions about the social atlas can be sent to Dr. Grace Bagwell-Adams () or Dr. Jerry Shannon (jshannon@uga.edu), both at the University of Georgia.
+Questions about the social atlas can be sent to Dr. Grace Bagwell-Adams (gbagwell@uga.edu) or Dr. Jerry Shannon (jshannon@uga.edu), both at the University of Georgia.

@@ -85,7 +85,7 @@ select_demo_count<-select_demo[grep("Percent",select_demo,invert=TRUE)]
 select_demo_pct<-select_demo[grep("Percent",select_demo)]
 
 ##AWP Civic vitality variables
-civicvariables_AWP <- subset(metadata, Demographics == 1) %>% filter(source=="AWP 3.0 Survey")
+civicvariables_AWP <- subset(metadata, Civic == 1) %>% filter(source=="AWP 3.0 Survey")
 select_civic_AWP <- unique(civicvariables_AWP$description)
 select_civic_pct_AWP <- select_civic_AWP[grep("Percent", select_civic_AWP)]
 

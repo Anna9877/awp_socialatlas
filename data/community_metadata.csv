@@ -1,4 +1,4 @@
-variable,description,source,Community_safety,Demographics,Health,Housing,Income_employment,Education,Transportation,Civic Vitality,type
+variable,description,source,Community_safety,Demographics,Health,Housing,Income_employment,Education,Transportation,Civic,type
 par_own_acc_p,Percent of Parcels Owned in Athens,Athens-Clarke County Tax Assessor Property Ownership Data 2021 ,0,0,0,1,0,0,0,0,pct
 land_own_acc_p,Percent of Land in Sq Ft Owned in Athens,Athens-Clarke County Tax Assessor Property Ownership Data 2021 ,0,0,0,1,0,0,0,0,pct
 par_own_ga_p,Percent of Parcels Owned in Georgia,Athens-Clarke County Tax Assessor Property Ownership Data 2021 ,0,0,0,1,0,0,0,0,pct
