@@ -21,8 +21,8 @@ atlasdata_comm <- read_csv("data/community_data_tct.csv")
 
 ###AWP
 awpdata <- read_csv("data/awp3_data.csv") %>% 
-  select(-SchoolID) %>%
-  mutate(moe=0)
+  select(-SchoolID)
+  # mutate(moe=0)
 awpdata_geo<-left_join(es_zones,awpdata)
 awpmeta <- read_csv("data/awp3_metadata.csv")
 
@@ -30,7 +30,8 @@ atlasdata <-  districts %>%
   left_join(rbind(atlasdata_comm, atlasdata_acs) %>%
     mutate(est = round(est, digits = 2)) %>%
     mutate(moe = round(moe, digits = 2)) %>%
-    mutate(GEOID=as.character(GEOID)))
+    mutate(GEOID=as.character(GEOID)) %>% 
+      mutate(moe = as.character(moe)))
 
 atlasdata2<- bind_rows(atlasdata,awpdata_geo)
 
@@ -39,9 +40,10 @@ acs_es <- read_csv("data/GA_2020/ESzones_acs_interpolation.csv") %>%
 
 comm_es <- read_csv("data/community_data_es.csv")
 
-atlasdata3 <- bind_rows(acs_es, comm_es, awpdata) %>%
-  mutate(moe = 0) %>%
-  mutate(est = round(est, digits = 2))
+atlasdata3 <- bind_rows(acs_es, comm_es, awpdata)
+# %>%
+#   mutate(moe = 0) %>%
+#   mutate(est = round(est, digits = 2))
 
 
 ########################################
@@ -79,10 +81,15 @@ select_safety_pct_AWP<-select_safety_AWP[grep("Percent",select_safety_AWP)]
 
 
 #demographic variables
-demovariables <- subset(metadata, Demographics == 1)
+demovariables <- subset(metadata, Demographics == 1) %>% filter(source !="AWP 3.0 Survey")
 select_demo <- unique(demovariables$description)
 select_demo_count<-select_demo[grep("Percent",select_demo,invert=TRUE)]
 select_demo_pct<-select_demo[grep("Percent",select_demo)]
+
+##AWP demographic variables
+demovariables_AWP <- subset(metadata, Demographics == 1) %>% filter(source=="AWP 3.0 Survey")
+select_demo_AWP <- unique(demovariables_AWP$description)
+select_demo_pct_AWP <- select_demo_AWP[grep("Percent", select_demo_AWP)]
 
 ##AWP Civic vitality variables
 civicvariables_AWP <- subset(metadata, Civic == 1) %>% filter(source=="AWP 3.0 Survey")
@@ -102,7 +109,7 @@ select_health_pct_AWP<-select_health_AWP[grep("Percent",select_health_AWP)]
 
 
 #housing variables
-housingvariables <-subset(metadata, Housing == 1)
+housingvariables <-subset(metadata, Housing == 1) %>%  filter(source !="AWP 3.0 Survey")
 select_housing <- unique(housingvariables$description)
 select_housing_count<-select_housing[grep("Percent",select_housing,invert=TRUE)]
 select_housing_pct<-select_housing[grep("Percent",select_housing)]
@@ -124,7 +131,7 @@ select_incemploy_AWP <- unique(incemployvariables_AWP$description)
 select_incemploy_pct_AWP<-select_incemploy_AWP[grep("Percent",select_incemploy_AWP)]
 
 #education variables
-eduvariables <- subset(metadata, Education == 1)
+eduvariables <- subset(metadata, Education == 1) %>% filter(source !="AWP 3.0 Survey")
 select_edu <- unique(eduvariables$description)
 select_edu_count<-select_edu[grep("Percent",select_edu,invert=TRUE)]
 select_edu_pct<-select_edu[grep("Percent",select_edu)]

@@ -78,15 +78,16 @@ radioButtons("group","Choose your variable domain:",
  conditionalPanel(
   condition="input.source =='awp'",
 radioButtons("group1","Choose your variable domain:",
-              c("Community Safety"="Safety",
+              c("Demographics" = "Demog",
                 "Health"="Health",
                 "Housing"="Housing",
-                "Education" = "Learning",
+                "Lifelong Learning" = "Learning",
+                "Community Safety"="Community_safety",
                 "Civic Vitality" = "Civic"),
-              selected="Health")
+              selected="Demog")
 )
  conditionalPanel(
-  condition="input.group =='Safety'&& input.source == 'awp'",
+  condition="input.group1 =='Community_safety'&& input.source == 'awp'",
    selectInput("variable1awpp","Select your variable:",
                choices = select_safety_pct_AWP)
  )
@@ -102,9 +103,15 @@ radioButtons("group1","Choose your variable domain:",
   condition="input.group =='Demog' && input.pct_count=='pct'&& input.source !='awp'",
    selectInput("variable2p","Select your variable:",
                 choices = select_demo_pct)
+  
+ )
+   conditionalPanel(
+  condition="input.group1 =='Demog'&& input.source == 'awp'",
+   selectInput("variable2awpp","Select your variable:",
+               choices = select_demo_pct_AWP)
  )
     conditionalPanel(
-  condition="input.group1 =='Civic Vitality' && input.source =='awp'",
+  condition="input.group1 =='Civic' && input.source =='awp'",
    selectInput("variable8awpp","Select your variable:",
                 choices = select_civic_pct_AWP)
  )
@@ -198,12 +205,14 @@ radioButtons("group1","Choose your variable domain:",
 #Use the variable object to select the variable people choose. When the domain is chosen, the appropriate variables will
 #be loaded. 
  variable<-reactive({
-     if(input$group1=="Safety" & input$source=="awp"){
+     if(input$group1=="Community_safety" & input$source=="awp"){
      input$variable1awpp
    } else if (input$group=="Demog" & input$pct_count=="count"& input$source !="awp") {
      input$variable2c
    } else if (input$group=="Demog" & input$pct_count=="pct"& input$source !="awp") {
      input$variable2p
+   } else if (input$group1=="Demog" & input$source =="awp") {
+     input$variable2awpp
    } else if (input$group=="Health" & input$pct_count=="count" & input$source !="awp") {
      input$variable3c
    } else if (input$group=="Health" & input$pct_count=="pct" & input$source !="awp") {
@@ -232,14 +241,18 @@ radioButtons("group1","Choose your variable domain:",
      input$variable7c
    } else if (input$group=="Transport" & input$pct_count=="pct") {
      input$variable7p
-   } else if (input$group1=="Civic Vitality" & input$source =="awp") {
+   } else if (input$group1=="Civic" & input$source =="awp") {
      input$variable8awpp
    }
    })
 
-radioButtons("rpal", "Select method of grouping the variable", c("Bins" = "b", "Quantiles" = "q"), selected = "b")
+ conditionalPanel(
+  condition="input.source !='awp'",
+radioButtons("rpal", "Select method of grouping the variable", c("Bins" = "b", "Quantiles" = "q"), selected = "b"))
  
-radioButtons("ngroups","Classify the map data into how many equally sized groups?",c(2,3,4,5,6),selected=4)
+  conditionalPanel(
+  condition="input.source !='awp'",
+radioButtons("ngroups","Classify the map data into how many equally sized groups?",c(2,3,4,5,6),selected=4))
 
 
 ```
@@ -299,17 +312,18 @@ output$map<-renderLeaflet({
   nclassint<- as.numeric(input$ngroups)
   pal <- if(input$rpal == "b" && input$source == "awp"){
     pal <- colorBin("Blues",filteredData_variable()$est, bins = nclassint, pretty = FALSE)
-  } else if (input$rpal == "q" && input$source =="awp") {
+  } 
+  else if (input$rpal == "q" && input$source =="awp") {
     pal <- colorQuantile("Blues", filteredData_variable()$est, n = nclassint)
   }
    else if (input$rpal == "b" && input$source !="awp") {
     pal <- colorBin("Reds", filteredData_variable()$est, bins = nclassint, pretty=FALSE)
-  
-  } else if (input$rpal == "q"&& input$source != "awp") {
+
+  }else if (input$rpal == "q"&& input$source != "awp") {
     pal <- colorQuantile("Reds", filteredData_variable()$est, n = nclassint)
-  }
-  #pal <- colorBin("Blues",filteredData_variable()$est, bins = nclassint)
-  #pal <- colorQuantile("Blues", filteredData_variable()$est, n = nclassint)
+}
+  # pal <- colorBin("Blues",filteredData_variable()$est, bins = nclassint)
+  # pal <- colorQuantile("Blues", filteredData_variable()$est, n = nclassint)
   factpal <- brewer.pal(8,"Dark2")
   factpal2 <- colorRampPalette(factpal)(16)
   es_pal <- colorFactor(factpal2, unique(es_zones$School))
@@ -483,6 +497,6 @@ General overview of the tool:
 
 * **U.S. Census American Community Survey**: About this data source
 * **Athens Open Data**: About this data source
-* **Athens Wellbeing Project**: About this data source
+* **Athens Wellbeing Project**: The purpose of the Athens Wellbeing Project (AWP) is to provide comprehensive data from a representative sample of households on our unique needs and assets in Athens-Clarke County. Launched in 2016, the AWP is championed by the Athens Area Community Foundation. Three rounds of survey data collection have been completed – version 1.0 in Fall 2016, version 2.0 in Fall 2018/Winter 2019, and version 3.0 in Fall 2021/Winter 2022 – with the intent of building a longitudinal dataset across time. The 3.0 data is the version currently available in the tool. AWP data provide information across all domains of life in our community which includes: Lifelong Learning, Health, Housing, Community Safety, and Civic Vitality. The AWP is pioneering an unprecedented collaboration of community leaders using a data collection approach that is representative of our community. The research design and community participation incorporates vulnerable populations providing unique opportunities to understand wellbeing across all groups in our county. More information can be found on the AWP website at https://www.athenswellbeingproject.org/ .
 
-Questions about the social atlas can be sent to Dr. Grace Bagwell-Adams (gbagwell@uga.edu) or Dr. Jerry Shannon (jshannon@uga.edu), both at the University of Georgia.
+Questions about the social atlas can be sent to Dr. Jerry Shannon (jshannon@uga.edu) or Dr. Grace Bagwell-Adams (gbagwell@uga.edu), both at the University of Georgia.

@@ -1,18 +1,18 @@
 variable,description,source,Community_safety,Demographics,Health,Housing,Income_employment,Education,Transportation,Civic,type
 healthcover,Percentage without health coverage,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
-welfarebens,Percentage receiving welfare benefits,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
-snap,Percentage receiving SNAP,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
-loan,Percentage who took out a high interest loan in the last 90 days,AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
+welfarebens,Percentage receiving welfare benefits,AWP 3.0 Survey,0,1,0,0,0,0,0,0,pct
+snap,Percentage receiving SNAP,AWP 3.0 Survey,0,1,0,0,0,0,0,0,pct
+loan,Percentage who took out a high interest loan in the last 90 days,AWP 3.0 Survey,0,1,0,0,0,0,0,0,pct
 evictthreat,Percentage that were threatened with eviction in the last 90 days,AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
-employloss,Percentage that lost a job in the last 12 months,AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
-internet_none,Percentage without Internet Access at home,AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
-ssdi,Percentage on SSDI,AWP 3.0 Survey,0,0,1,1,0,0,0,0,pct
-ssi,Percentage on SSI,AWP 3.0 Survey,0,0,1,1,0,0,0,0,pct
-tanf,Percentage receiving TANF,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
-wic,Percentage receiving WIC,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
-caps,Percentage receiving CAPS,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
+employloss,Percentage that lost a job in the last 12 months,AWP 3.0 Survey,0,1,0,0,0,0,0,0,pct
+internet_none,Percentage without Internet Access at home,AWP 3.0 Survey,0,1,0,0,0,0,0,0,pct
+ssdi,Percentage on SSDI,AWP 3.0 Survey,0,1,0,0,0,0,0,0,pct
+ssi,Percentage on SSI,AWP 3.0 Survey,0,1,0,0,0,0,0,0,pct
+tanf,Percentage receiving TANF,AWP 3.0 Survey,0,1,0,0,0,0,0,0,pct
+wic,Percentage receiving WIC,AWP 3.0 Survey,0,1,0,0,0,0,0,0,pct
+caps,Percentage receiving CAPS,AWP 3.0 Survey,0,1,0,0,0,0,0,0,pct
 utilitybills,Percentage that had difficulty paying utility bills in the last 90 days,AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
-creditbills,Percentage that had difficulty paying credit card bills,AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
+creditbills,Percentage that had difficulty paying credit card bills,AWP 3.0 Survey,0,1,0,0,0,0,0,0,pct
 medicalbills,Percentage that had difficulty paying medical bills in the last 90 days,AWP 3.0 Survey,0,0,1,0,0,0,0,0,pct
 register_vote,Percentage registered to vote,AWP 3.0 Survey,0,0,0,0,0,0,0,1,pct
 corr_year,Percentage that Corresponded with Politician,AWP 3.0 Survey,0,0,0,0,0,0,0,1,pct
@@ -54,4 +54,19 @@ homeprob_any,Percentage living in a home with any of the listed housing problems
 homeprob_mold,Percentage living in a home with mold,AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
 homeprob_health,Percentage living in a home with health hazards such as radon or lead,AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
 homeprob_cracks,"Percentage living in a home with open cracks or holes in the floors, wall, or ceilings",AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
-homeprob_paint,,,,,,,,,,,
+homeprob_paint,Percentage living in a home with peeling paint,AWP 3.0 Survey,0,0,0,1,0,0,0,0,pct
+neigh_safe,Percentage who feel unsafe in their neighborhood,AWP 3.0 Survey,1,0,0,0,0,0,0,0,pct
+home_safe,Percentage who feel unsafe in their home,AWP 3.0 Survey,1,0,0,0,0,0,0,0,pct
+street_safe,Percentage who feel unsafe on their street,AWP 3.0 Survey,1,0,0,0,0,0,0,0,pct
+college_enroll,Percentage that are currently enrolled in college,AWP 3.0 Survey,0,0,0,0,0,1,0,0,pct
+donate_year,Percentage that donated money to a church or charity,AWP 3.0 Survey,0,0,0,0,0,0,0,1,pct
+satisfy_home,Percentage who are satisfied with their home life,AWP 3.0 Survey,0,0,0,0,0,0,0,1,pct
+satisfy_job,Percentage that are satisfied with their job,AWP 3.0 Survey,0,0,0,0,0,0,0,1,pct
+satisfy_life,Percentage satisfied with their life as a whole,AWP 3.0 Survey,0,0,0,0,0,0,0,1,pct
+dt_safe,Percentage who feel unsafe in downtown Athens,AWP 3.0 Survey,1,0,0,0,0,0,0,0,pct
+read,Percentage of households with children where someone in the family read to the child/children in the past week,AWP 3.0 Survey,0,0,0,0,0,1,0,0,pct
+socialgather,"Percentage who meet socially with friends, relatives, or work colleagues once a month or less",AWP 3.0 Survey,0,0,0,0,0,0,0,1,pct
+childcare,"Percentage of households with children who use childcare services, including having a friend or family member take care of them",AWP 3.0 Survey,0,0,0,0,0,1,0,0,pct
+educ_success,Percentage of parents who believe the education their child is receiving is preparing them for future success,AWP 3.0 Survey,0,0,0,0,0,1,0,0,pct
+learn_expect,Percentage of parents who understand what their child is expected to learn in all subject areas,AWP 3.0 Survey,0,0,0,0,0,1,0,0,pct
+learn_confident,Percentage of parents who feel confident about their ability to help their child with schoolwork at home,AWP 3.0 Survey,0,0,0,0,0,1,0,0,pct
