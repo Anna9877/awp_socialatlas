@@ -302,7 +302,7 @@ filteredData_variable <- reactive({
       popup_text=paste("<b>Census Tract: </b>", #substr(GEOID,6,11),"<br>",
       "<b>School Zone(s): </b>", School,"<br>",
       "<b>",description,":</b> ", est,"<br>",
-      "<b>Estimate margin of error: </b>", moe,"<br>", #sep =
+      "<b>Margin of error/Confidence Interval: </b>", moe,"<br>", #sep =
       "")))
   
  })
@@ -497,6 +497,6 @@ General overview of the tool:
 
 * **U.S. Census American Community Survey**: About this data source
 * **Athens Open Data**: About this data source
-* **Athens Wellbeing Project**: The purpose of the Athens Wellbeing Project (AWP) is to provide comprehensive data from a representative sample of households on our unique needs and assets in Athens-Clarke County. Launched in 2016, the AWP is championed by the Athens Area Community Foundation. Three rounds of survey data collection have been completed – version 1.0 in Fall 2016, version 2.0 in Fall 2018/Winter 2019, and version 3.0 in Fall 2021/Winter 2022 – with the intent of building a longitudinal dataset across time. The 3.0 data is the version currently available in the tool. AWP data provide information across all domains of life in our community which includes: Lifelong Learning, Health, Housing, Community Safety, and Civic Vitality. The AWP is pioneering an unprecedented collaboration of community leaders using a data collection approach that is representative of our community. The research design and community participation incorporates vulnerable populations providing unique opportunities to understand wellbeing across all groups in our county. More information can be found on the AWP website at https://www.athenswellbeingproject.org/ .
+* **Athens Wellbeing Project**: The purpose of the Athens Wellbeing Project (AWP) is to provide comprehensive data from a representative sample of households on our unique needs and assets in Athens-Clarke County. Launched in 2016, the AWP is championed by the Athens Area Community Foundation. Three rounds of survey data collection have been completed – version 1.0 in Fall 2016, version 2.0 in Fall 2018/Winter 2019, and version 3.0 in Fall 2021/Winter 2022 – with the intent of building a longitudinal dataset across time. The 3.0 data is the version currently available in this tool in the form of weighted proportions for selected variables. AWP data provide information across all domains of life in our community which includes: Lifelong Learning, Health, Housing, Community Safety, and Civic Vitality. The AWP is pioneering an unprecedented collaboration of community leaders using a data collection approach that is representative of our community. The research design and community participation incorporates vulnerable populations providing unique opportunities to understand wellbeing across all groups in our county. More information can be found on the AWP website at https://www.athenswellbeingproject.org/ and questions can be emailed to athenswellbeingproject@gmail.com
 
-Questions about the social atlas can be sent to Dr. Jerry Shannon (jshannon@uga.edu) or Dr. Grace Bagwell-Adams (gbagwell@uga.edu), both at the University of Georgia.
+Questions about the social atlas can be sent to Dr. Jerry Shannon (jshannon@uga.edu) at the University of Georgia.
